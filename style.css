@@ -1,0 +1,211 @@
+/*
+Theme Name: CDatos
+Theme URI: http://thejlmedia.com
+Author: Jorge Luis Veliz
+Author URI: http://thejlmedia.com/
+Description: Template Realizado por Thejlmedia para CDATOS
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Noticias, news, Estadistic, Estadistica
+Text Domain: jlcdatos
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*
+    1.- BODY
+    2.- NAV
+    3.- LIST POSTS
+    4.- FOOTER
+    5.- WIDGETS
+
+*/
+
+/* BODY */
+body {
+    background: #f7f8f9;
+    color: #000000;
+}
+
+p,
+ul,
+li {
+    color: rgb(180, 180, 180)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    font-style: italic;
+    border-left: 10px solid #7b1256;
+    padding-left: 15px;
+    margin: 8px 0px;
+}
+
+ul li {
+    font-style: italic;
+}
+
+
+#main-container,
+.container {
+    background-color: #fff;
+}
+
+#main-section {
+    padding: 0px;
+}
+
+.title-page:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    background-color: #7b1256;
+}
+
+.title-page {
+    font-size: 1.4em;
+}
+
+.auth-section a {
+    color: #000000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.auth-section>li:first-child {
+    border-right: 1px solid #000000;
+}
+
+.auth-section a:hover {
+    color: #71104C;
+}
+
+.list-unstyled li:before {
+    /* content: "•"; */
+    color: #7b1256;
+    font-size: 30px;
+    margin-right: 10px
+}
+
+/* NAV */
+#main-nav {
+    background-color: #231f1f;
+    padding: 0px;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+#main-nav a {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    font-weight: bold
+}
+
+#main-nav a:hover {
+    background-color: #7b1256
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block
+}
+
+
+.dropdown-menu {
+    background: #231F1F;
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.dropdown-menu a {
+    text-align: left
+}
+
+.active {
+    background-color: #7b1256
+}
+
+/* LIST POSTS */
+
+.container-post {
+    margin-bottom: 5%;
+    font-style: italic;
+}
+
+.extract-post {
+    color: rgb(180, 180, 180)
+}
+
+.read-more {
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #7b1256;
+    font-style: italic;
+    padding: 4px 20px;
+    transition: 0.3s;
+}
+
+.read-more:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #660e44
+}
+
+.title-post {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    border-left: 10px solid #7b1256;
+    padding-left: 15px;
+    margin: 8px 0px;
+}
+
+/* FOOTER */
+#footer {
+    background-color: #000000;
+    padding-top: 20px;
+    /* height: 100px; */
+    color: #ffffff;
+}
+
+#container-footer{
+    background-color: transparent
+}
+
+
+/* WIDGETS */
+#social-networks{
+    height: 100%;
+}
+
+#social-networks li {
+    display: inline;
+}
+#social-networks li img{
+    width: 70%;
+}
+.widget-header{
+    font-style: italic;
+    border-left: 10px solid #7b1256;
+    padding-left: 15px;
+    margin: 8px 0px;
+}
+
+.widget-content{
+    color: #ffffff;
+    font-size: 14px
+}
