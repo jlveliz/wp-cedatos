@@ -1,3 +1,11 @@
+<!-- WIDGETS PREFOOTER -->
+<?php if (is_active_sidebar( 'widgets_prefooter' )): ?>
+	<div class="row justify-content-center">
+		<?php dynamic_sidebar( 'widgets_prefooter' );  ?>
+	</div>
+<?php endif ?>
+<!-- cierra main container -->
+</div>
 <footer id="footer" class="container-fluid">
 		<div class="container  pt-2" id="container-footer">
 			<div class="row">

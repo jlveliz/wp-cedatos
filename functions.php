@@ -25,7 +25,10 @@ if(!function_exists('jlcdatos_load_scripts')) {
 add_action('wp_enqueue_scripts', 'jlcdatos_load_scripts');
 
 /* ADD FUNCTIONS */ 
+
+
 if(!function_exists('jlcdatos_setup')) {
+    /* MENU */    
     function jlcdatos_setup() {
         register_nav_menu('main',esc_html('Menú Principal','jlcdatos'));
     }
@@ -146,3 +149,20 @@ if(!function_exists('jlcdatos_customizer')) {
     }
 }
 add_action( 'customize_register', 'jlcdatos_customizer',1,1);
+
+
+
+
+/* WIDGETS */
+if (!function_exists('jlcdatos_widget_sidebar')) {
+    function jlcdatos_widget_sidebar() {
+        register_sidebar(array( 
+            'name' => 'Widget PreFooter' ,
+            'id' => 'widgets_prefooter',
+            'before_widget' => '<div class="col-md-2 col-3 text-center ml-4">',
+            'after_widget' => '</div>',
+
+        ));
+    }
+}
+add_action( 'widgets_init', 'jlcdatos_widget_sidebar', 10, 1 );
