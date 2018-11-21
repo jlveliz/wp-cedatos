@@ -1,20 +1,22 @@
-<?php get_header(); ?>
+<?php get_header(); ?> 
 
 <body>
 	<!-- LOGO -->
 	<header>
 		<div class="container justify-content-center">
 			<div class="p-3 text-center">
-				<a href="#">
-					<img class="mx-auto" src="images/logo.png" alt="">
-				</a>
+				<?php if (has_custom_logo()): ?>
+					<?php  the_custom_logo();?>			
+				<?php else: ?>
+					<h3 class="text-uppercase"> <?php bloginfo( 'name' ); ?> </h3>
+				<?php endif ?>
 			</div>
 		</div>
 		<!-- PREHEADER -->
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-12 text-md-left text-center align-middle title-page">
-					Inicio
+					<?php the_title(); ?>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
 					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center mt-3 mt-lg-0 mt-md-0 auth-section">
@@ -34,32 +36,21 @@
 				 aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<?php wp_nav_menu( array( 'menu' => 'main', 'menu_class' => 'navbar-nav') ); ?>
-					<ul class="navbar-nav">
-						<li class="nav-item"><a href="#" class="nav-link">Quienes Somos</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Productos y Servicios</a></li>
-						<li class="nav-item dropdown">
-							<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-							 aria-haspopup="true" aria-expanded="false">Estudios Realizados</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a href="#" class="dropdown-item text-left">Children</a>
-								<a href="#" class="dropdown-item text-left">Children</a>
-								<a href="#" class="dropdown-item text-left">Children</a>
-							</div>
-						</li>
-						<li class="nav-item"><a href="#" class="nav-link">Metodología</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Publicaciones</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Clientes</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contáctenos</a></li>
-					</ul>
-				</div>
+				<?php 
+					$args = [
+						'theme_location' => 'main',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id' => 'navbarNav',
+						'menu_class' => 'navbar-nav',
+						'walker' => new bootstrap_4_walker_nav_menu()
+					];
+					wp_nav_menu($args); 
+				?>
 			</nav>
 		</div>
 
 		<section class="emtpy"></section>
 	</header>
-
 	<div id="main-container" class="container">
 		<h3>Hola</h3>
 		<ul class="list-unstyled">

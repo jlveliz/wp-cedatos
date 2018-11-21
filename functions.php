@@ -60,25 +60,89 @@ add_theme_support( 'title-tag' );
 // add_theme_support( 'custom-header' );
 // add_theme_support( 'custom-background' );
 add_theme_support( 'post-thumbnails' );
+//logo
+$configCustomLogo = [
+    'height' => 49,
+    'width' => 249,
+    'flex-height' => true,
+    'flex-width'  => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+];
+add_theme_support( 'custom-logo' , $configCustomLogo);
 
 
 /* CUSTOMIZER */
 if(!function_exists('jlcdatos_customizer')) {
 
     function jlcdatos_customizer($wp_customize) {
-        $wp_customize->add_panel('general',[
-            'title' => __('General','jlcdatos'),
-            'description' => __('Logo','jlcdatos'),
-            'priority' => 1
+        $wp_customize->add_panel('footer',[
+            'title' => __('Footer','jlcdatos'),
+            'description' => __('Footer','jlcdatos'),
+            'priority' => 200
         ]);
 
-        /*LOGO*/ 
-        $wp_customize->add_action( 'logo', [
-            'title' => __('Logotipo','jlcdatos'),
-            'panel' => 'general',
-            'priority' => 1
+        /*SOCIAL AREA*/ 
+        $wp_customize->add_section( 'social_icons', [
+            'title' => __('Sociales','jlcdatos'),
+            'panel' => 'footer',
+            'priority' => 10
         ]);
+
+
+        $wp_customize->add_setting('facebook_link' , array(
+            'default'     => '',
+            'transport'   => 'refresh'
+        ));
+        $wp_customize->add_control('facebook', array(
+            'label' => __('Facebook Link','jlcdatos'),
+            'section' => 'social_icons', //this is the section where the custom-logo from WordPress is
+            'settings' => 'facebook_link',
+            'priority' => 1, // show it just below the custom-logo
+        ));
+
+
+        $wp_customize->add_setting('twitter_link' , array(
+            'default'     => '',
+            'transport'   => 'refresh'
+        ));
+        $wp_customize->add_control('twitter', array(
+            'label' => __('Twitter Link','jlcdatos'),
+            'section' => 'social_icons', //this is the section where the custom-logo from WordPress is
+            'settings' => 'twitter_link',
+            'priority' => 2, // show it just below the custom-logo
+        ));
+
+        $wp_customize->add_setting('youtube_link' , array(
+            'default'     => '',
+            'transport'   => 'refresh'
+        ));
+        $wp_customize->add_control('youtube', array(
+            'label' => __('Youtube Link','jlcdatos'),
+            'section' => 'social_icons', //this is the section where the custom-logo from WordPress is
+            'settings' => 'youtube_link',
+            'priority' => 3, // show it just below the custom-logo
+        ));
+
+
+        /* CONTACT AREA */
+        $wp_customize->add_section('contact', array(
+            'title' => __('Contacto', 'jlcdatos'),
+            'panel' => 'footer',
+            'priority' => 20
+        ));
+
+        $wp_customize->add_setting('contact_setting', array(
+            'default' => '',
+            'transport' => 'refresh' 
+        ));
+        $wp_customize->add_control('contact_area',array(
+            'label' => __('Contacto','jlcdatos'),
+            'priority' => 1,
+            'settings' => 'contact_setting',
+            'section' => 'contact',
+            'type' => 'textarea'
+        ));
+
     }
-
-add_action( 'customize_register', 'jlcdatos_customizer',10, 1 );
 }
+add_action( 'customize_register', 'jlcdatos_customizer',1,1);
