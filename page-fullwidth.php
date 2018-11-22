@@ -1,3 +1,4 @@
+<?php /* Template Name: Fullwidth*/ ?>
 <?php get_header(); ?> 
 
 <body>
@@ -52,35 +53,14 @@
 	<div id="main-container" class="container">
 		
 		<section class="row empty"></section>
-		
 		<!-- WIDGETS PREFOOTER -->
 		<?php if (is_active_sidebar( 'precontent' )): ?>
 			<?php dynamic_sidebar( 'precontent' );  ?>
 		<?php endif ?>
 		<!-- sidebar -->
 
-		<div class="row">
-			<div class="container-post col-8">
-				<?php if (have_posts()): ?>
-					<?php while(have_posts()): the_post(); ?>
-						<div class="row">
-							<div class="col-4">
-								<?php the_post_thumbnail( 'publicaciones'); ?>
-							</div>
-							<div class="col-8">
-								<h2 class="title-post"><?php the_title(); ?></h2>
-								<p class="extract-post"><?php the_excerpt(); ?></p>
-								<a href="<?php the_permalink(); ?>" class="read-more"><?php esc_html_e('Leer Más') ?></a>
-							</div>
-						</div>
-					<?php endwhile; ?>
-				<?php else: ?>
-					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-				<?php endif; ?>
-			</div>
-		</div>
-
-
+		
+		<?php the_content(); ?>
 
 
 <?php get_footer(); ?>

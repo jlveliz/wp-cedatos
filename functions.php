@@ -3,6 +3,9 @@
 //menu
 require_once 'lib/bootstrap_4_walker_nav_menu.php';
 
+//widgets
+require_once 'lib/jl_widgets.php';
+
 //required plugins
 include_once 'lib/jl_require_plugins.php';
 
@@ -159,13 +162,23 @@ add_action( 'customize_register', 'jlcdatos_customizer',1,1);
 
 /* WIDGETS */
 if (!function_exists('jlcdatos_widget_sidebar')) {
+   
+
     function jlcdatos_widget_sidebar() {
+        
         register_sidebar(array( 
             'name' => 'Widget PreFooter' ,
             'id' => 'widgets_prefooter',
             'before_widget' => '<div class="col-md-2 col-3 text-center ml-4">',
             'after_widget' => '</div>',
 
+        ));
+
+        register_sidebar(array( 
+            'name' => 'Precontent',
+            'id' => 'precontent',
+            'before_widget' => '',
+            'after_widget' => '',
         ));
     }
 }
