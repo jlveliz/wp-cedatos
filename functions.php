@@ -48,7 +48,7 @@ if(!function_exists('jlcdatos_setup')) {
     ];
     add_theme_support( 'custom-logo' , $configCustomLogo);
 
-    add_image_size( 'publicaciones', 300, 350, true);
+    add_image_size( 'publicaciones', 200, 250, true);
 }
 add_action('after_setup_theme', 'jlcdatos_setup');
 

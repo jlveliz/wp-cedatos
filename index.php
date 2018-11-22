@@ -83,7 +83,7 @@
 			<li>hola</li>
 			<li>Hola</li>
 		</ul> -->
-		<div class="row">
+		<!-- <div class="row">
 			<div class="container-post col-8">
 				<div class="row">
 					<div class="col-4">
@@ -109,7 +109,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	
 
 
