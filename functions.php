@@ -32,6 +32,23 @@ if(!function_exists('jlcdatos_setup')) {
     function jlcdatos_setup() {
         register_nav_menu('main',esc_html('Menú Principal','jlcdatos'));
     }
+
+    //SUPPORTS
+    add_theme_support( 'title-tag' );
+    // add_theme_support( 'custom-header' );
+    // add_theme_support( 'custom-background' );
+    add_theme_support( 'post-thumbnails' );
+    //logo
+    $configCustomLogo = [
+        'height' => 49,
+        'width' => 249,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    ];
+    add_theme_support( 'custom-logo' , $configCustomLogo);
+
+    add_image_size( 'publicaciones', 300, 350, true);
 }
 add_action('after_setup_theme', 'jlcdatos_setup');
 
@@ -58,20 +75,7 @@ if(!function_exists('jlcdatos_item_class')) {
 }
 add_filter('nav_menu_css_class','jlcdatos_item_class',1,3);
 
-//SUPPORTS
-add_theme_support( 'title-tag' );
-// add_theme_support( 'custom-header' );
-// add_theme_support( 'custom-background' );
-add_theme_support( 'post-thumbnails' );
-//logo
-$configCustomLogo = [
-    'height' => 49,
-    'width' => 249,
-    'flex-height' => true,
-    'flex-width'  => true,
-    'header-text' => array( 'site-title', 'site-description' ),
-];
-add_theme_support( 'custom-logo' , $configCustomLogo);
+
 
 
 /* CUSTOMIZER */

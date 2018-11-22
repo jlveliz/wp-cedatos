@@ -135,6 +135,12 @@ ul li {
     text-align: left
 }
 
+.empty {
+    height: 50px;
+    background: #fff;
+    border-bottom: 30px solid #424242
+}
+
 .active {
     background-color: #7b1256
 }
