@@ -51,12 +51,22 @@
 	</header>
 	<div id="main-container" class="container">
 		
-		<section class="row empty"></section>
+		<section class="row empty mb-4"></section>
 		
 		<!-- WIDGETS PREFOOTER -->
-		<?php if (is_active_sidebar( 'precontent' )): ?>
-			<?php dynamic_sidebar( 'precontent' );  ?>
-		<?php endif ?>
+			<div class="row">
+				<?php if (is_active_sidebar( 'precontent_left' )): ?>
+					<div class="col-12 justify-content-md-left justify-content-center text-center text-md-left <?php if(!is_active_sidebar( 'precontent_right' )) : ?>col-md-12<?php else: ?>col-md-8<?php endif; ?>">
+						<?php dynamic_sidebar( 'precontent_left' );  ?>
+					</div>
+				<?php endif ?>
+
+				<?php if (is_active_sidebar( 'precontent_right' )): ?>
+					<div class="col-12 justify-content-md-right justify-content-center text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?>">
+						<?php dynamic_sidebar( 'precontent_right' );  ?>
+					</div>
+				<?php endif ?>
+			</div>
 		<!-- sidebar -->
 
 		<div class="row">

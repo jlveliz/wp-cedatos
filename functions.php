@@ -166,19 +166,27 @@ if (!function_exists('jlcdatos_widget_sidebar')) {
 
     function jlcdatos_widget_sidebar() {
         
+        
+        register_sidebar(array( 
+            'name' => 'Precontent Left',
+            'id' => 'precontent_left',
+            'before_widget' => '',
+            'after_widget' => '',
+        ));
+
+        register_sidebar(array( 
+            'name' => 'Precontent Right',
+            'id' => 'precontent_right',
+            'before_widget' => '',
+            'after_widget' => '',
+        ));
+
         register_sidebar(array( 
             'name' => 'Widget PreFooter' ,
             'id' => 'widgets_prefooter',
             'before_widget' => '<div class="col-md-2 col-3 text-center ml-4">',
             'after_widget' => '</div>',
 
-        ));
-
-        register_sidebar(array( 
-            'name' => 'Precontent',
-            'id' => 'precontent',
-            'before_widget' => '',
-            'after_widget' => '',
         ));
     }
 }
