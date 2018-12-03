@@ -19,7 +19,7 @@
 					<?php the_title(); ?>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
-					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center mt-3 mt-lg-0 mt-md-0 auth-section">
+					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center my-3 mt-lg-0 mt-md-0 auth-section">
 						<li class="nav-item"><a class="nav-link" href="#">Ingreso</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
 					</ul>
@@ -30,8 +30,9 @@
 		<!-- NAV -->
 
 		<div class="container" id="main-nav">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar d-flex justify-content-sm-center navbar-expand-lg navbar-light">
 				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
 				 aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -69,7 +70,7 @@
 			</div>
 		<!-- sidebar -->
 
-		<div class="row">
+		<main class="row">
 			<div class="container-post col-8">
 				<?php if (have_posts()): ?>
 					<?php while(have_posts()): the_post(); ?>
@@ -88,7 +89,7 @@
 					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 				<?php endif; ?>
 			</div>
-		</div>
+		</main>
 
 
 

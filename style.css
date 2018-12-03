@@ -53,6 +53,12 @@ ul li {
     font-style: italic;
 }
 
+.navbar-toggler{
+    background-color: #7b1256;
+    border-radius: 0px;
+    color:#fff!important;
+}
+
 
 #main-container,
 .container {
@@ -214,4 +220,14 @@ ul li {
 .widget-content{
     color: #ffffff;
     font-size: 14px
+}
+
+
+.widget-title-post {
+    color: #000;
+    font-size: 17px;
+}
+
+.widget-title-post:hover {
+    color: #000;
 }
