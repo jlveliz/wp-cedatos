@@ -19,7 +19,7 @@
 					<?php the_title(); ?>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
-					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center mt-3 mt-lg-0 mt-md-0 auth-section">
+					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center my-3 mt-lg-0 mt-md-0 auth-section">
 						<li class="nav-item"><a class="nav-link" href="#">Ingreso</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
 					</ul>
@@ -30,8 +30,9 @@
 		<!-- NAV -->
 
 		<div class="container" id="main-nav">
-			<nav class="navbar navbar-expand-lg navbar-light">
+			<nav class="navbar d-flex justify-content-sm-center navbar-expand-lg navbar-light">
 				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
 				 aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -51,27 +52,35 @@
 	</header>
 	<div id="main-container" class="container">
 		
-		<section class="row empty"></section>
+		<section class="row empty mb-4"></section>
 		
 		<!-- WIDGETS PREFOOTER -->
-		<?php if (is_active_sidebar( 'precontent' )): ?>
-			<?php dynamic_sidebar( 'precontent' );  ?>
-		<?php endif ?>
-		<!-- sidebar -->
+			<div class="row">
+				<?php if (is_active_sidebar( 'precontent_left' )): ?>
+					<div class="col-12 justify-content-md-left justify-content-center text-center text-md-left <?php if(!is_active_sidebar( 'precontent_right' )) : ?>col-md-12<?php else: ?>col-md-8<?php endif; ?>">
+						<?php dynamic_sidebar( 'precontent_left' );  ?>
+					</div>
+				<?php endif ?>
 
-		<div class="row">
-			<div class="container-post col-8">
-				<?php if(have_posts()):  while(have_posts()): the_post(); ?>
-					<?php the_content() ?>
-				<?php endwhile ?>
+				<?php if (is_active_sidebar( 'precontent_right' )): ?>
+					<div class="col-12 justify-content-md-right justify-content-center mt-3 mt-md-0 text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?>">
+						<?php dynamic_sidebar( 'precontent_right' );  ?>
+					</div>
 				<?php endif ?>
 			</div>
-
-			<div class="col-4">
-				<h1>Hola Sidebar</h1>
-			</div>
-		</div>
-
-
+			
+			<main class="the-content my-4">
+				<div class="row">
+					<div class="col-12 p-0">
+					<?php if (have_posts()): ?>
+					<?php while(have_posts()): the_post(); ?>
+						<?php the_content() ?>
+					<?php endwhile; ?>
+					</div>
+				<?php else: ?>
+					<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
+				</div>
+			</main>
 
 <?php get_footer(); ?>

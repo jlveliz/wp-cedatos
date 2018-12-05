@@ -70,7 +70,7 @@
 			</div>
 		<!-- sidebar -->
 
-		<main class="row">
+		<main class="the-content my-4">
 			<div class="container-post col-8">
 				<?php if (have_posts()): ?>
 					<?php while(have_posts()): the_post(); ?>
