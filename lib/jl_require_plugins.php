@@ -44,7 +44,21 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 	            'force_activation' => false,
 	            'force_deactivation' => false,
 	            'external_url' => '',
-        	)
+        	),
+        	array(
+				'name'     				=> esc_html__( 'WPRT Addons for Visual Composer', 'thejlmedia'),  // The plugin name
+				'slug'     				=> 'WPRT_VC_Addons', // The plugin slug (typically the folder name)
+				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
+				'source'             	=> esc_url('http://ninzio.com/craft/_plugins/WPRT_VC_Addons.zip'),
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+			),
+			array(
+				'name'     				=> esc_html__( 'WPRT Custom Post Type', 'thejlmedia'), // The plugin name
+				'slug'     				=> 'WPRT_Custom_Post_Type', // The plugin slug (typically the folder name)
+				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
+				'source'             	=> esc_url('http://ninzio.com/craft/_plugins/WPRT_Custom_Post_Type.zip'),
+				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+			)
 		];
 
 		$config = array(

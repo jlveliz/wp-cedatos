@@ -5,7 +5,7 @@
 	</div>
 <?php endif ?>
 <!-- cierra main container -->
-</div>
+</main>
 <footer id="footer" class="container-fluid">
 		<div class="container  pt-2" id="container-footer">
 			<div class="row">
