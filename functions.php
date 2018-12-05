@@ -161,6 +161,21 @@ add_action( 'customize_register', 'jlcdatos_customizer',1,1);
 
 
 /* WIDGETS */
+
+add_action( 'dynamic_sidebar_before', 'jlcdatos_widget_title_h2_h3' );
+
+function jlcdatos_widget_title_h2_h3( $sidebar_id ) {
+ global $wp_registered_sidebars;
+ if ( isset( $wp_registered_sidebars[$sidebar_id] ) ) {
+    if ( isset($wp_registered_sidebars[$sidebar_id]['before_title']) ) {
+      $now = $wp_registered_sidebars[$sidebar_id]['before_title'];
+      $h3 = str_ireplace( '<h2', '<h3', $now );
+      $wp_registered_sidebars[$sidebar_id]['before_title'] = $h3;
+    }
+ }
+}
+
+
 if (!function_exists('jlcdatos_widget_sidebar')) {
    
 

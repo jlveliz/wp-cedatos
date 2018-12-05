@@ -26,14 +26,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* BODY */
 body {
-    background: #f7f8f9;
+    background: #ffffff;
     color: #000000;
 }
 
 p,
 ul,
 li {
-    color: rgb(180, 180, 180)
+    color: black
 }
 
 h1,
@@ -43,10 +43,16 @@ h4,
 h5,
 h6 {
     font-weight: bold;
-    font-style: italic;
+    /*font-style: italic;*/
     border-left: 10px solid #7b1256;
     padding-left: 15px;
     margin: 8px 0px;
+}
+
+h2.heading  {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 8px !important    
 }
 
 ul li {
@@ -59,6 +65,9 @@ ul li {
     color:#fff!important;
 }
 
+.no-border {
+    border: none!important; 
+}
 
 #main-container,
 .container {
@@ -79,7 +88,7 @@ ul li {
 }
 
 .title-page {
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 .auth-section a {
@@ -210,12 +219,15 @@ ul li {
 #social-networks li img{
     width: 70%;
 }
-.widget-header{
-    font-style: italic;
+.wpb_heading, .widget-header{
+    /*font-style: italic;*/
     border-left: 10px solid #7b1256;
     padding-left: 15px;
     margin: 8px 0px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
+
 
 .widget-content{
     color: #ffffff;
@@ -230,4 +242,32 @@ ul li {
 
 .widget-title-post:hover {
     color: #000;
+}
+
+.vc_custom_heading, .vc_gitem-post-data-source-post_title h3,
+.vc_gitem-post-data-source-post_title h2 {
+    padding: 0px!important;
+    font-size: 1.5vw;
+    border: none!important;
+}
+
+.hesperiden .tp-bullet {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: rgb(153, 153, 153);
+    background: -moz-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
+    background: -webkit-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
+    background: -o-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
+    background: -ms-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
+    background: linear-gradient(to bottom, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
+    filter: progid:dximagetransform.microsoft.gradient( startcolorstr="rgb(153, 153, 153)", endcolorstr="rgb(225, 225, 225)",gradienttype=0 );
+    border: 3px solid rgb(229, 229, 229);
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.hesperiden .tp-bullet:hover, .hesperiden .tp-bullet.selected {
+    background: rgb(113, 16, 76) !important;
 }
