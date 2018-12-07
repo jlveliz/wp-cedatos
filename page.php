@@ -29,41 +29,41 @@
 
 		<!-- NAV -->
 
-		<div class="container" id="main-nav">
-			<nav class="navbar d-flex justify-content-sm-center navbar-expand-lg navbar-light">
-				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+		<div class="container-fluid text-center" id="main-nav">
+			<div class="container">
+				<nav class="nav-bar navbar-expand-md navbar-dark justify-content-center">
+					<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-				 aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<?php 
-					$args = [
-						'theme_location' => 'main',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id' => 'navbarNav',
-						'menu_class' => 'navbar-nav',
-						'walker' => new bootstrap_4_walker_nav_menu()
-					];
-					wp_nav_menu($args); 
-				?>
-			</nav>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<?php 
+						$args = [
+							'theme_location' => 'main',
+							'container_class' => 'collapse navbar-collapse',
+							'container_id' => 'navbarNav',
+							'menu_class' => 'navbar-nav',
+							'walker' => new bootstrap_4_walker_nav_menu()
+						];
+						wp_nav_menu($args); 
+					?>
+				</nav>	
+			</div>
 		</div>
 	</header>
 	<div id="main-container" class="container pb-4">
 		
-		<section class="row empty mb-4"></section>
-		
 		<!-- WIDGETS PREFOOTER -->
 			<div class="row">
 				<?php if (is_active_sidebar( 'precontent_left' )): ?>
-					<div class="col-12 justify-content-md-left justify-content-center text-center text-md-left <?php if(!is_active_sidebar( 'precontent_right' )) : ?>col-md-12<?php else: ?>col-md-8<?php endif; ?>">
+					<div class="col-12 justify-content-md-left justify-content-center text-center text-md-left <?php if(!is_active_sidebar( 'precontent_right' )) : ?>col-md-12<?php else: ?>col-md-8<?php endif; ?> pt-4">
 						<?php dynamic_sidebar( 'precontent_left' );  ?>
 					</div>
 				<?php endif ?>
 
 				<?php if (is_active_sidebar( 'precontent_right' )): ?>
-					<div class="col-12 justify-content-md-right justify-content-center mt-3 mt-md-0 text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?>">
+					<div class="col-12 justify-content-md-right justify-content-center mt-2 mt-md-0 text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?> pt-3">
 						<?php dynamic_sidebar( 'precontent_right' );  ?>
 					</div>
 				<?php endif ?>
@@ -72,16 +72,16 @@
 	</div>
 			
 	<main class="container my-0 p-0">
-		<!-- <div class="row"> -->
-			<!-- <div class="col-12 p-0"> -->
+		<div class="row">
+			<div class="col-12 p-0">
 			<?php if (have_posts()): ?>
 			<?php while(have_posts()): the_post(); ?>
 				<?php the_content() ?>
 			<?php endwhile; ?>
-			<!-- </div> -->
+			</div>
 		<?php else: ?>
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
-		<!-- </div> -->
+		</div>
 	
 <?php get_footer(); ?>

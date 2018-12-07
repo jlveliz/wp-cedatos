@@ -58,6 +58,15 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 				'source'             	=> esc_url('http://ninzio.com/craft/_plugins/WPRT_Custom_Post_Type.zip'),
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+			),
+			array(
+				'name' => 'WordPress Twitter Feeds With Shortcode',
+				'slug' => 'shortcode-twitter-feeds',
+				'required' => true,
+			),array(
+				'name' => 'Custom Facebook Feed',
+				'slug' => 'custom-facebook-feed',
+				'required' => true,
 			)
 		];
 
