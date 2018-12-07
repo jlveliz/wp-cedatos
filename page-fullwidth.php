@@ -1,3 +1,4 @@
+<?php /* Plantilla: fullwidth */ ?>
 <?php get_header(); ?> 
 
 <body>
@@ -52,7 +53,8 @@
 			</div>
 		</div>
 	</header>
-	<div id="main-container" class="container pb-4">	
+	<div id="main-container" class="container pb-4">
+		
 		<!-- WIDGETS PREFOOTER -->
 			<div class="row">
 				<?php if (is_active_sidebar( 'precontent_left' )): ?>
@@ -71,16 +73,16 @@
 	</div>
 			
 	<main class="container my-0 p-0">
-		<div class="row">
-			<div class="col-12 p-0">
+		<!-- <div class="row"> -->
+			<!-- <div class="col-12 p-0"> -->
 			<?php if (have_posts()): ?>
 			<?php while(have_posts()): the_post(); ?>
 				<?php the_content() ?>
 			<?php endwhile; ?>
-			</div>
+			<!-- </div> -->
 		<?php else: ?>
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
-		</div>
+		<!-- </div> -->
 	
 <?php get_footer(); ?>

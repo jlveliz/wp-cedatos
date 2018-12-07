@@ -120,7 +120,17 @@ h2.heading  {
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 8px !important    
+<<<<<<< HEAD
+=======
 }
+
+<<<<<<< HEAD
+=======
+ul li {
+    font-style: italic;
+>>>>>>> 64ed6a67b235c14c25aa8f8d1da63f9564249ce3
+}
+>>>>>>> b9118b21a29f9005d0b419faba6edd84d930e215
 
 
 .navbar-toggler{
@@ -129,10 +139,16 @@ h2.heading  {
     color:#ffffff!important;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b9118b21a29f9005d0b419faba6edd84d930e215
 .navbar-toggler span {
     color:#ffffff!important;
 }
 
+=======
+>>>>>>> 64ed6a67b235c14c25aa8f8d1da63f9564249ce3
 .no-border {
     border: none!important; 
 }
@@ -320,6 +336,9 @@ h2.heading  {
 .vc_gitem-post-data-source-post_title h2 {
     padding: 0px!important;
     font-size: 1.5rem;
+    font-size: 1.5rem;
+    font-size: 1.5vw;
+
     border: none!important;
 }
 
@@ -352,4 +371,17 @@ h2.heading  {
     font-size: 1.8rem;
     letter-spacing: 5px;
     font-family: 'Lato-Bold';
+}
+
+
+.tnp-widget input.tnp-submit{
+    background-color: #000!important;
+    background-image: none!important;
+    text-shadow: none!important;
+    color: #fff!important;
+    font-size: 1.2rem!important;
+    margin: 0!important;
+    border-left: 17px solid #7B1256;
+    padding-left: 16px;
+
 }

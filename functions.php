@@ -197,11 +197,18 @@ if (!function_exists('jlcdatos_widget_sidebar')) {
         ));
 
         register_sidebar(array( 
-            'name' => 'Widget PreFooter' ,
-            'id' => 'widgets_prefooter',
+            'name' => 'Widget PreFooter 2' ,
+            'id' => 'widgets_prefooter_2',
             'before_widget' => '<div class="col-md-2 col-3 text-center ml-4">',
             'after_widget' => '</div>',
 
+        ));
+
+        register_sidebar(array( 
+            'name' => 'Widget Prefooter 1',
+            'id' => 'widgets_prefooter_1',
+            'before_widget' => '<div class"col-12 text-center">',
+            'after_widget' => '</div>' 
         ));
     }
 }

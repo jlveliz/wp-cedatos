@@ -1,7 +1,13 @@
 <!-- WIDGETS PREFOOTER -->
-<?php if (is_active_sidebar( 'widgets_prefooter' )): ?>
-	<div class="row justify-content-center">
-		<?php dynamic_sidebar( 'widgets_prefooter' );  ?>
+<?php if (is_active_sidebar( 'widgets_prefooter_1' )): ?>
+	<div class="row justify-content-center mt-4">
+		<?php dynamic_sidebar( 'widgets_prefooter_1' );  ?>
+	</div>
+<?php endif ?>
+
+<?php if (is_active_sidebar( 'widgets_prefooter_2' )): ?>
+	<div class="row justify-content-center mt-2">
+		<?php dynamic_sidebar( 'widgets_prefooter_2' );  ?>
 	</div>
 <?php endif ?>
 <!-- cierra main container -->
