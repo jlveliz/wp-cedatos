@@ -120,6 +120,13 @@ h2.heading  {
     font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 8px !important    
+<<<<<<< HEAD
+=======
+}
+
+ul li {
+    font-style: italic;
+>>>>>>> 64ed6a67b235c14c25aa8f8d1da63f9564249ce3
 }
 
 
@@ -129,10 +136,13 @@ h2.heading  {
     color:#ffffff!important;
 }
 
+<<<<<<< HEAD
 .navbar-toggler span {
     color:#ffffff!important;
 }
 
+=======
+>>>>>>> 64ed6a67b235c14c25aa8f8d1da63f9564249ce3
 .no-border {
     border: none!important; 
 }
@@ -319,7 +329,11 @@ h2.heading  {
 .vc_custom_heading, .vc_gitem-post-data-source-post_title h3,
 .vc_gitem-post-data-source-post_title h2 {
     padding: 0px!important;
+<<<<<<< HEAD
     font-size: 1.5rem;
+=======
+    font-size: 1.5vw;
+>>>>>>> 64ed6a67b235c14c25aa8f8d1da63f9564249ce3
     border: none!important;
 }
 
