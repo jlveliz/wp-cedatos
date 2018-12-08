@@ -19,7 +19,7 @@ class CurrentDateWidget extends WP_Widget {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
 
-		echo  date_i18n("d ") . __(' de ', 'jlcdatos') . date_i18n('F '). __('del ','jlcdatos') . date_i18n('Y');
+		echo  date_i18n("d ") . __(' de ', 'jlcdatos') . ucfirst(date_i18n('F ')) . __('del ','jlcdatos') . date_i18n('Y');
 		echo $args['after_widget'];
 	}
 
@@ -171,9 +171,27 @@ class TitlePost extends WP_Widget
 	}
 }
 
+
+
+
+if (is_plugin_active('newsletter/plugin.php')) {
+
+	// unregister_widget( 'Newsletter' );
+
+	
+
+   /**
+    * Newsletter widget version 2.0: it'll replace the old version left for compatibility.
+    */
+   
+}
+
 function jlcdatos_register_widgets() {
 	register_widget( 'CurrentDateWidget' );
 	register_widget( 'TitlePost' );
+	// if (is_plugin_active( 'newsletter/plugin.php' )) {
+	// 	register_widget( 'Newsletter' );
+	// }
 }
 
 add_action( 'widgets_init', 'jlcdatos_register_widgets' );
