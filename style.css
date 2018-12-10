@@ -22,6 +22,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     4.- LIST POSTS
     5.- FOOTER
     6.- WIDGETS
+    7.- PLUGINS
 
 */
 
@@ -53,7 +54,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @font-face {
     font-family: 'Lato-Hairline';
     src: url(assets/fonts/Lato-Hairline.ttf);
-     font-weight: 100;
+    font-weight: 100;
 }
 
 @font-face {
@@ -88,6 +89,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-weight: bolder;
     font-style: italic;
 }
+
 /* FONTS */
 
 /* BODY */
@@ -115,35 +117,34 @@ h6 {
     margin: 8px 0px;
 }
 
-h1{
-    font-size: 2.0rem;
+h1 {
+    font-size: 1.50rem !important;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.25rem !important;
 }
 
 h3 {
-    font-size: 1.50rem;
+    font-size: 1.0rem !important;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 0.75rem !important;
 }
 
 h5 {
-    font-size: 1.0rem;
+    font-size: 0.50rem !important;
 }
 
 h6 {
-    font-size: 0.75rem;
+    font-size: 0.25rem !important;
 }
 
-h2.heading  {
+h2.heading {
     font-size: 1.2rem;
     text-transform: uppercase;
-    margin-bottom: 8px !important    
-
+    margin-bottom: 8px !important
 }
 
 p {
@@ -156,18 +157,18 @@ p {
 
 
 
-.navbar-toggler{
+.navbar-toggler {
     background-color: #7b1256;
     border-radius: 0px;
-    color:#ffffff!important;
+    color: #ffffff !important;
 }
 
 .navbar-toggler span {
-    color:#ffffff!important;
+    color: #ffffff !important;
 }
 
 .no-border {
-    border: none!important; 
+    border: none !important;
 }
 
 #main-container,
@@ -280,7 +281,8 @@ p {
     padding-left: 15px;
 }
 
-#menu-secondary a:hover, #menu-secondary a.active {
+#menu-secondary a:hover,
+#menu-secondary a.active {
     text-decoration: none;
     color: #71104c;
 
@@ -298,7 +300,8 @@ p {
     color: rgb(180, 180, 180)
 }
 
-.vc_gitem-link .vc-zone-link, .read-more {
+.vc_gitem-link .vc-zone-link,
+.read-more {
     color: #ffffff;
     border-radius: 10px;
     background-color: #7b1256;
@@ -323,7 +326,7 @@ p {
 }
 
 .meta-date {
-    font-size: 1.4rem!important;
+    font-size: 1.4rem !important;
     font-style: normal;
 }
 
@@ -335,28 +338,30 @@ p {
     color: #ffffff;
 }
 
-#container-footer{
+#container-footer {
     background-color: transparent
 }
 
 
 /* WIDGETS */
-#social-networks{
+#social-networks {
     height: 100%;
 }
 
 #social-networks li {
     display: inline;
 }
-#social-networks li img{
+
+#social-networks li img {
     width: 70%;
 }
-.wpb_heading, .widget-header{
-    /*font-style: italic;*/
+
+.wpb_heading,
+.widget-header {
     border-left: 10px solid #7b1256;
     padding-left: 15px;
     margin: 8px 0px;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     text-transform: uppercase;
 }
 
@@ -367,7 +372,7 @@ p {
     /*font-family: 'Lato-Light'*/
 }
 
-.widget-content{
+.widget-content {
     color: #ffffff;
     font-size: 14px
 }
@@ -382,14 +387,15 @@ p {
     color: #000;
 }
 
-.vc_custom_heading, .vc_gitem-post-data-source-post_title h3,
+.vc_custom_heading,
+.vc_gitem-post-data-source-post_title h3,
 .vc_gitem-post-data-source-post_title h2 {
-    padding: 0px!important;
+    padding: 0px !important;
     font-size: 1.5rem;
     font-size: 1.5rem;
     font-size: 1.5vw;
 
-    border: none!important;
+    border: none !important;
 }
 
 .hesperiden .tp-bullet {
@@ -398,23 +404,25 @@ p {
     position: absolute;
     background: rgb(153, 153, 153);
     background: -moz-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
-    background: -webkit-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
-    background: -o-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
-    background: -ms-linear-gradient(top, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
-    background: linear-gradient(to bottom, rgb(153, 153, 153) 0%,rgb(225, 225, 225) 100%);
-    filter: progid:dximagetransform.microsoft.gradient( startcolorstr="rgb(153, 153, 153)", endcolorstr="rgb(225, 225, 225)",gradienttype=0 );
+    background: -webkit-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
+    background: -o-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
+    background: -ms-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
+    background: linear-gradient(to bottom, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr="rgb(153, 153, 153)", endcolorstr="rgb(225, 225, 225)", gradienttype=0);
     border: 3px solid rgb(229, 229, 229);
     border-radius: 50%;
     cursor: pointer;
     box-sizing: content-box;
 }
 
-.hesperiden .tp-bullet:hover, .hesperiden .tp-bullet.selected {
+.hesperiden .tp-bullet:hover,
+.hesperiden .tp-bullet.selected {
     background: rgb(113, 16, 76) !important;
 }
 
-.vc_btn3.vc_btn3-color-black, .vc_btn3.vc_btn3-color-black.vc_btn3-style-flat {
-    background-color: #000!important;
+.vc_btn3.vc_btn3-color-black,
+.vc_btn3.vc_btn3-color-black.vc_btn3-style-flat {
+    background-color: #000 !important;
 }
 
 #home-more-news {
@@ -424,26 +432,62 @@ p {
 }
 
 
-.tnp-widget input.tnp-submit{
-    background-image: url(assets/images/boton_suscribe.png)!important;
-    background-color: none!important;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
-    background-position: left top!important;
+.tnp-widget input.tnp-submit {
+    background-image: url(assets/images/boton_suscribe.png) !important;
+    background-color: none !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: left top !important;
     /*background-image: none!important;*/
-    text-shadow: none!important;
-    color: #fff!important;
-    font-size: 1.2rem!important;
-    margin: 0!important;
+    text-shadow: none !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    margin: 0 !important;
     /*border-left: 17px solid #7B1256 !important;*/
     /*padding-left: 16px;*/
 
 }
 
-.header-boletin{
+.header-boletin {
     font-family: 'Lato-LightItalic';
     border: 0px;
     color: #727176;
     padding-left: 0px;
+    font-size: 1.6rem !important;
 }
 
+
+
+
+/*7 - PLUGINS*/
+
+/*wp-forms*/
+.wpcf7-text {
+    border: 0px !important;
+    border-bottom: 1px solid #000 !important;
+    width: 100%
+}
+
+.wpcf7-text:focus {
+    border: 0px !important;
+}
+
+.wpcf7-submit {
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #7b1256;
+    font-style: italic;
+    padding: 6px 15px;
+    transition: 0.3s;
+    border:none;
+    cursor: pointer;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #7b1256!important;
+    font-weight: bolder!important;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: 2px solid #000!important;
+}

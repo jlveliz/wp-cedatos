@@ -1,3 +1,4 @@
+<?php /* Template Name: fullwidth with header */ ?>
 <?php get_header(); ?> 
 	
 			
@@ -10,11 +11,8 @@
 				</div>
 			</div>
 			<div class="row mt-4">
-				<div class="col-12 col-lg-9 col-md-8">
+				<div class="col-12">
 					<?php the_content() ?>
-				</div>
-				<div class="col-12 col-lg-3 col-md-4 p-2">
-					<?php get_sidebar(); ?>
 				</div>
 			</div>
 			<?php endwhile; ?>

@@ -1,7 +1,7 @@
 <?php /* Template Name: fullwidth */ ?>
 <?php get_header(); ?> 
 			
-	<main class="container my-0 p-0">
+	<main class="container my-0">
 			<?php if (have_posts()): ?>
 			<?php while(have_posts()): the_post(); ?>
 				<?php the_content() ?>
