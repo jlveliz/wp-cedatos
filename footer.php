@@ -35,7 +35,7 @@
 				</div>
 				<div class="col-md-4 col-12">
 					<?php if (get_theme_mod( 'contact_setting' )): ?>
-						<h6 class="widget-header text-uppercase"><?php bloginfo('name'); ?></h6>
+						<h3 class="widget-header text-uppercase"><?php bloginfo('name'); ?></h3>
 						<p class="widget-content"><?php echo get_theme_mod( 'contact_setting' ); ?></p>
 					<?php endif ?>
 				</div>

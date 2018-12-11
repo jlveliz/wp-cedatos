@@ -67,6 +67,18 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'name' => 'Custom Facebook Feed',
 				'slug' => 'custom-facebook-feed',
 				'required' => true,
+			),array(
+				'name' => 'Visual Portfolio',
+				'slug' => 'visual-portfolio',
+				'required' => true,
+			),array(
+				'name' => 'AWSM Team',
+				'slug' => 'awsm-team',
+				'required' => true,
+			),array(
+				'name' => 'Accordion',
+				'slug' => 'accordions',
+				'required' => true,
 			)
 		];
 

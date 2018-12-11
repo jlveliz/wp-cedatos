@@ -281,11 +281,16 @@ p {
     padding-left: 15px;
 }
 
-#menu-secondary a:hover,
-#menu-secondary a.active {
+#menu-secondary li a:hover,
+#menu-secondary li.active {
     text-decoration: none;
     color: #71104c;
+    background-color: transparent!important;
+    font-family: 'Lato-Bold';
+}
 
+#menu-secondary li.active a {
+    color:#71104c!important;
 }
 
 
@@ -431,7 +436,7 @@ p {
     font-family: 'Lato-Bold';
 }
 
-
+.tnp-widget-minimal  input.tnp-submit,
 .tnp-widget input.tnp-submit {
     background-image: url(assets/images/boton_suscribe.png) !important;
     background-color: none !important;
@@ -446,6 +451,10 @@ p {
     /*border-left: 17px solid #7B1256 !important;*/
     /*padding-left: 16px;*/
 
+}
+
+.tnp-widget-minimal  input.tnp-submit {
+    margin-top: 10px!important;
 }
 
 .header-boletin {
@@ -490,4 +499,19 @@ span.wpcf7-not-valid-tip {
 
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: 2px solid #000!important;
+}
+
+/*ADWS Team*/
+.awsm-grid.list-style>.awsm-grid-card {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+}
+
+figure > figcaption {
+    margin-top: 60px
+}
+
+.list-style figure img {
+    width: 200px
 }
