@@ -24,7 +24,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-12 text-md-left text-center align-middle title-page">
-					<?php the_title(); ?>
+					<?php 
+					if (is_page()) {
+						the_title();
+					} else { ?>
+						Noticias
+					<?php } ?>
 				</div>
 				<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
 					<ul class="nav justify-content-md-end justify-content-lg-end  justify-content-center my-3 mt-lg-0 mt-md-0 auth-section">

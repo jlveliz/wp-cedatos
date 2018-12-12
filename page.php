@@ -13,9 +13,7 @@
 				<div class="col-12 col-lg-9 col-md-8">
 					<?php the_content() ?>
 				</div>
-				<div class="col-12 col-lg-3 col-md-4 p-2">
-					<?php get_sidebar(); ?>
-				</div>
+				<?php get_sidebar(); ?>
 			</div>
 			<?php endwhile; ?>
 		<?php else: ?>

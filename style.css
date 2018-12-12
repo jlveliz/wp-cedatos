@@ -289,12 +289,12 @@ p {
 #menu-secondary li.active {
     text-decoration: none;
     color: #71104c;
-    background-color: transparent!important;
+    background-color: transparent !important;
     font-family: 'Lato-Bold';
 }
 
 #menu-secondary li.active a {
-    color:#71104c!important;
+    color: #71104c !important;
 }
 
 
@@ -319,6 +319,7 @@ p {
     font-style: italic;
     padding: 6px 15px;
     transition: 0.3s;
+    /*box-shadow: */
 }
 
 .read-more:hover {
@@ -337,8 +338,10 @@ p {
 }
 
 .meta-date {
-    font-size: 1.4rem !important;
-    font-style: normal;
+    font-size: 1.1rem !important;
+    font-style: normal !important;
+    color: #000;
+    font-family: 'Lato';
 }
 
 /*posts noticias*/
@@ -350,24 +353,75 @@ p {
 
 
 .post-header {
-    background-position: 50% 50%!important;
-    position: relative!important;
-    background-repeat: no-repeat!important;
+    background-position: 50% 50% !important;
+    position: relative !important;
+    background-repeat: no-repeat !important;
     background-size: cover !important;
     background-clip: border-box !important;
     box-sizing: border-box;
     overflow: hidden;
     cursor: pointer;
+    max-height: 219px
 }
 
 .bg-dark {
-    background: #000!important
+    background: #231f1f !important
 }
 
 .read-more-post {
     bottom: 10px;
     right: 5px;
     font-size: .7rem
+}
+
+/*paginacion*/
+nav.pagination h2 {
+    display: none;
+}
+
+nav.pagination .nav-links {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav.pagination .nav-links span,
+nav.pagination .nav-links .page-numbers {
+    padding: 7px 10px;
+    border-radius: 3px;
+    margin-left: 3px;
+    background: #231f1f;
+    color: #ffffff;
+}
+
+nav.pagination .nav-links .current {
+    background: #7b1256 !important;
+}
+
+nav.pagination .nav-links .next,
+nav.pagination .nav-links .prev {
+    background: transparent !important;
+    color: #231f1f !important
+}
+
+.single-paginator a {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.single-paginator .prev a {
+    background-image: url(assets/images/prev.png);
+    padding-left: 25px;
+}
+
+.single-paginator .next a {
+    background-image: url(assets/images/next.png);
+    background-position: right;
+    padding-right: 25px;
+}
+
+.single-paginator a {
+    color: #000000 !important;
 }
 
 /* FOOTER */
@@ -471,7 +525,7 @@ p {
     font-family: 'Lato-Bold';
 }
 
-.tnp-widget-minimal  input.tnp-submit,
+.tnp-widget-minimal input.tnp-submit,
 .tnp-widget input.tnp-submit {
     background-image: url(assets/images/boton_suscribe.png) !important;
     background-color: none !important;
@@ -488,8 +542,8 @@ p {
 
 }
 
-.tnp-widget-minimal  input.tnp-submit {
-    margin-top: 10px!important;
+.tnp-widget-minimal input.tnp-submit {
+    margin-top: 10px !important;
 }
 
 .header-boletin {
@@ -497,7 +551,7 @@ p {
     border: 0px;
     color: #727176;
     padding-left: 0px;
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
 }
 
 
@@ -523,17 +577,18 @@ p {
     font-style: italic;
     padding: 6px 15px;
     transition: 0.3s;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
 span.wpcf7-not-valid-tip {
-    color: #7b1256!important;
-    font-weight: bolder!important;
+    color: #7b1256 !important;
+    font-weight: bolder !important;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-    border: 2px solid #000!important;
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+    border: 2px solid #000 !important;
 }
 
 /*ADWS Team*/
@@ -543,7 +598,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: none;
 }
 
-figure > figcaption {
+figure>figcaption {
     margin-top: 60px
 }
 

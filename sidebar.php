@@ -1,16 +1,17 @@
-<nav class="nav-bar mb-2">
-	<?php 
-		$args = [
-			'theme_location' => 'secundary',
-			'container_class' => 'pl-0',
-			// 'container_id' => 'navbarNav',
-			'menu_class' => 'pl-0',
-			// 'walker' => new bootstrap_4_walker_nav_menu()
-		];
-		wp_nav_menu($args); 
-	?>
-</nav>
+<div class="col-12 col-lg-3 col-md-4 px-2">
+	<?php if (class_exists('RevSlider')):  putRevSlider("sidebar"); endif ?> 
+	<nav class="nav-bar mb-2 mt-2">
+		<?php 
+			$args = [
+				'theme_location' => 'secundary',
+				'container_class' => 'pl-0',
+				'menu_class' => 'pl-0'
+			];
+			wp_nav_menu($args); 
+		?>
+	</nav>
 
-<?php if (is_active_sidebar( 'widgets_sidebar' )): ?>
-	<?php dynamic_sidebar( 'widgets_sidebar' );  ?>
-<?php endif ?>
+	<?php if (is_active_sidebar( 'widgets_sidebar' )): ?>
+		<?php dynamic_sidebar( 'widgets_sidebar' );  ?>
+	<?php endif ?>
+</div>
