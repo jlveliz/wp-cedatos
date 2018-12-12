@@ -157,6 +157,10 @@ p {
 
 
 
+.hidden {
+    visibility: hidden;
+}
+
 .navbar-toggler {
     background-color: #7b1256;
     border-radius: 0px;
@@ -190,7 +194,7 @@ p {
 }
 
 .title-page {
-    font-size: 1.4rem;
+    font-size: 1.0rem;
 }
 
 .auth-section a {
@@ -296,6 +300,8 @@ p {
 
 /* LIST POSTS */
 
+
+
 .container-post {
     margin-bottom: 5%;
     font-style: italic;
@@ -324,7 +330,7 @@ p {
 .title-post {
     font-weight: bold;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-left: 10px solid #7b1256;
     padding-left: 15px;
     margin: 8px 0px;
@@ -333,6 +339,35 @@ p {
 .meta-date {
     font-size: 1.4rem !important;
     font-style: normal;
+}
+
+/*posts noticias*/
+
+.the-post a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.post-header {
+    background-position: 50% 50%!important;
+    position: relative!important;
+    background-repeat: no-repeat!important;
+    background-size: cover !important;
+    background-clip: border-box !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.bg-dark {
+    background: #000!important
+}
+
+.read-more-post {
+    bottom: 10px;
+    right: 5px;
+    font-size: .7rem
 }
 
 /* FOOTER */
@@ -385,7 +420,7 @@ p {
 
 .widget-title-post {
     color: #000;
-    font-size: 17px;
+    font-size: 1.2rem;
 }
 
 .widget-title-post:hover {

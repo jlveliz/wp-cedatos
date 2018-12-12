@@ -106,7 +106,7 @@ class TitlePost extends WP_Widget
 		if ($posts->have_posts()) {
 			while ($posts->have_posts()) {
 				$posts->the_post(); ?>
-				<a class="widget-title-post" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>">NOTICIAS: <?php  the_title() ?> </a>
+				<a class="widget-title-post" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>">NOTICIAS: <?php  ucfirst(the_title())  ?> </a>
 			<?php }
 		} else {
 			echo "<h3> No tiene Posts </h3>";
