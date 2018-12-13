@@ -174,24 +174,10 @@ class TitlePost extends WP_Widget
 
 
 
-if (is_plugin_active('newsletter/plugin.php')) {
-
-	// unregister_widget( 'Newsletter' );
-
-	
-
-   /**
-    * Newsletter widget version 2.0: it'll replace the old version left for compatibility.
-    */
-   
-}
 
 function jlcdatos_register_widgets() {
 	register_widget( 'CurrentDateWidget' );
 	register_widget( 'TitlePost' );
-	// if (is_plugin_active( 'newsletter/plugin.php' )) {
-	// 	register_widget( 'Newsletter' );
-	// }
 }
 
 add_action( 'widgets_init', 'jlcdatos_register_widgets' );

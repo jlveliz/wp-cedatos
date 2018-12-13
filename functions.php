@@ -19,9 +19,10 @@ if(!function_exists('jlcdatos_load_scripts')) {
         wp_enqueue_style('style');
 
         /* SCRIPTS */ 
-        wp_enqueue_script('jquery');
+        wp_enqueue_script('jquery',get_template_directory_uri().'/assets/js/jquery.min.js');
+
         wp_enqueue_script('popper',get_template_directory_uri().'/assets/js/popper.min.js' , ['jquery'], '1.0', true);
-        wp_enqueue_script('bootstrap-js',get_template_directory_uri().'/assets/js/bootstrap.min.js' , ['popper','jquery'], '1.0', true);
+        wp_enqueue_script('bootstrap-js',get_template_directory_uri().'/assets/js/bootstrap.js' , ['popper','jquery'], '1.0', true);
     }
 }
 
@@ -35,6 +36,7 @@ if(!function_exists('jlcdatos_setup')) {
     function jlcdatos_setup() {
         register_nav_menu('main',esc_html('Menú Principal','jlcdatos'));
         register_nav_menu('secundary',esc_html('Menú Sidebar','jlcdatos'));
+        register_nav_menu('auth-area',esc_html('Auth','jlcdatos'));
     }
 
     //SUPPORTS
@@ -42,6 +44,8 @@ if(!function_exists('jlcdatos_setup')) {
     // add_theme_support( 'custom-header' );
     // add_theme_support( 'custom-background' );
     add_theme_support( 'post-thumbnails' );
+
+   
     //logo
     $configCustomLogo = [
         'height' => 49,
