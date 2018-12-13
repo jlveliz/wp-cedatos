@@ -205,8 +205,11 @@ p {
 }
 
 .auth-section li.active {
-    background-color: transparent!important;
-    border-bottom: 1px solid  #7b1256;
+    background-color: transparent !important;
+}
+
+.auth-section li.active a {
+    border-bottom: 1px solid #7b1256;
 }
 
 .auth-section>li:first-child {
@@ -215,7 +218,7 @@ p {
 
 .auth-section a:hover {
     color: #71104C;
-    border-bottom: 1px solid  #7b1256;
+    /*border-bottom: 1px solid  #7b1256;*/
 }
 
 .list-unstyled li:before {
@@ -249,7 +252,7 @@ p {
     font-style: normal;
 }
 
-#main-nav a:hover {
+#main-nav a:hover,  #main-nav li.active{
     background-color: #7b1256
 }
 
@@ -274,9 +277,7 @@ p {
     border-bottom: 30px solid #424242
 }
 
-.active {
-    background-color: #7b1256
-}
+
 
 #menu-secondary {
     /*font-family: 'Lato-Light';*/
@@ -612,3 +613,6 @@ figure>figcaption {
 .list-style figure img {
     width: 200px
 }
+
+/* ultimate members */
+

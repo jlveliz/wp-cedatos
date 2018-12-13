@@ -26,7 +26,7 @@ if(!function_exists('jlcdatos_load_scripts')) {
     }
 }
 
-add_action('wp_enqueue_scripts', 'jlcdatos_load_scripts');
+add_action('wp_enqueue_scripts', 'jlcdatos_load_scripts',1000);
 
 /* ADD FUNCTIONS */ 
 
