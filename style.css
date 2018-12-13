@@ -204,12 +204,18 @@ p {
     margin: 0px 10px;
 }
 
+.auth-section li.active {
+    background-color: transparent!important;
+    border-bottom: 1px solid  #7b1256;
+}
+
 .auth-section>li:first-child {
     border-right: 1px solid #000000;
 }
 
 .auth-section a:hover {
     color: #71104C;
+    border-bottom: 1px solid  #7b1256;
 }
 
 .list-unstyled li:before {
