@@ -23,6 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     5.- FOOTER
     6.- WIDGETS
     7.- PLUGINS
+    8.- MODAL
 
 */
 
@@ -616,3 +617,22 @@ figure>figcaption {
 
 /* ultimate members */
 
+/* 8 MODALS*/
+.iframe-content{
+    position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+.modal-content-popup {
+    position: relative;
+     width: 80%;
+     height: 0;
+     padding-bottom: 56.25%;
+ }
+
+ .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
+    height: 90%!important;
+ }

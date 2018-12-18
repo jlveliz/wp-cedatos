@@ -23,6 +23,7 @@ if(!function_exists('jlcdatos_load_scripts')) {
 
         wp_enqueue_script('popper',get_template_directory_uri().'/assets/js/popper.min.js' , ['jquery'], '1.0', true);
         wp_enqueue_script('bootstrap-js',get_template_directory_uri().'/assets/js/bootstrap.js' , ['popper','jquery'], '1.0', true);
+        wp_enqueue_script('app',get_template_directory_uri().'/assets/js/app.js' , ['jquery','popper','bootstrap-js'], '1.0', true);
     }
 }
 
