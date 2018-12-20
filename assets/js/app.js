@@ -20,4 +20,9 @@ jQuery(document).ready(function($) {
 
 	});
 
+
+	$('#main-nav a.dropdown-toggle').on('click',function(event){
+		self.location = $(this).attr('href');
+	})
+
 });

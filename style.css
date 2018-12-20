@@ -269,7 +269,7 @@ p {
 }
 
 .dropdown-menu a {
-    text-align: left
+    text-align: left!important;
 }
 
 .empty {
@@ -528,7 +528,7 @@ nav.pagination .nav-links .prev {
     background-color: #000 !important;
 }
 
-#home-more-news {
+.home-more-news {
     font-size: 1.8rem;
     letter-spacing: 5px;
     font-family: 'Lato-Bold';
@@ -615,6 +615,11 @@ figure>figcaption {
     width: 200px
 }
 
+/**compose*/
+.vc_column_container>.vc_column-inner {
+    padding-left: 0px!important;
+}
+
 /* ultimate members */
 
 /* 8 MODALS*/
@@ -636,3 +641,4 @@ figure>figcaption {
  .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
     height: 90%!important;
  }
+
