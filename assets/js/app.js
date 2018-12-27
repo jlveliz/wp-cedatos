@@ -25,4 +25,6 @@ jQuery(document).ready(function($) {
 		self.location = $(this).attr('href');
 	})
 
+	
+
 });

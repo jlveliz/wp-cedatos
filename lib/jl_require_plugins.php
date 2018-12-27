@@ -87,6 +87,10 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'name' => 'Ultimate Member – User Profile & Membership Plugin',
 				'slug' => 'ultimate-member',
 				'required' => true,
+			),array(
+				'name' => 'Post title marquee scroll',
+				'slug' => 'post-title-marquee-scroll',
+				'required' => true,
 			)
 		];
 

@@ -642,3 +642,13 @@ figure>figcaption {
     height: 90%!important;
  }
 
+/*news title marquee*/
+.ptms_marquee a{
+    color: #000!important;
+}
+.marquee-title {
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Lato'!important;
+}

@@ -100,15 +100,20 @@ class TitlePost extends WP_Widget
 			'cat' => $categories,
 			'order' => $order,
 			'paged' => 1,
-			'posts_per_page' => 1
+			// 'posts_per_page' => 1
 		]);
 
-		if ($posts->have_posts()) {
-			while ($posts->have_posts()) {
-				$posts->the_post(); ?>
-				<a class="widget-title-post" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>">NOTICIAS: <?php  ucfirst(the_title())  ?> </a>
-			<?php }
-		} else {
+		if ($posts->have_posts()) { ?> 
+			<div class="row">
+				<p class="col-2 pr-0 marquee-title">Noticias:</p>
+				<marquee class="col-10 ptms_marquee" style="color:#000" scrollamount="10" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+				<?php while ($posts->have_posts()) {
+					$posts->the_post(); ?>
+					<a class="" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>"> <?php  ucfirst(the_title())  ?> </a> -
+				<?php } ?> 
+				 </marquee>
+			</div>
+		<?php } else {
 			echo "<h3> No tiene Posts </h3>";
 		}
 
