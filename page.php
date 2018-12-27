@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="row mt-4">
-				<div class="col-12 col-lg-9 col-md-8">
+				<div class="col-12 col-lg-9 col-md-8 p-lg-0">
 					<?php the_content() ?>
 				</div>
 				<?php get_sidebar(); ?>

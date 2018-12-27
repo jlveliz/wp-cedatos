@@ -530,7 +530,7 @@ nav.pagination .nav-links .prev {
 
 .home-more-news {
     font-size: 1.8rem;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-family: 'Lato-Bold';
 }
 
@@ -616,9 +616,9 @@ figure>figcaption {
 }
 
 /**compose*/
-.vc_column_container>.vc_column-inner {
+/*.vc_column_container>.vc_column-inner {
     padding-left: 0px!important;
-}
+}*/
 
 /* ultimate members */
 

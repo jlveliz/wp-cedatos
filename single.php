@@ -2,7 +2,7 @@
 	<main class="container my-5 p-0">
 			<?php if (have_posts()): ?>
 			<div class="row mt-4">
-				<div class="col-12 col-lg-9 col-md-8">
+				<div class="col-12 col-lg-9 col-md-8 p-lg-0">
 					<?php while(have_posts()): the_post(); ?>
 					<?php the_post_thumbnail('full',['class' => 'img-fluid text-center d-block justify-content-center mb-5 mx-auto']); ?>
 					<h2 class="font-italic"><?php the_title(); ?></h2>
