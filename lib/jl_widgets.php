@@ -106,7 +106,7 @@ class TitlePost extends WP_Widget
 		if ($posts->have_posts()) { ?> 
 			<div class="row">
 				<p class="col-2 pr-0 marquee-title">Noticias:</p>
-				<marquee class="col-10 ptms_marquee" style="color:#000" scrollamount="10" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+				<marquee class="col-10 ptms_marquee" style="color:#000" scrollamount="5" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
 				<?php while ($posts->have_posts()) {
 					$posts->the_post(); ?>
 					<a class="" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>"> <?php  ucfirst(the_title())  ?> </a> -
