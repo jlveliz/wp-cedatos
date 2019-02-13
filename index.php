@@ -1,9 +1,9 @@
 <?php get_header(); ?> 
 			
-	<main class="container my-0 <?php if(is_front_page()) : ?> px-0 <?php endif; ?>">
+	<main class="container my-0  px-0">
 		<div class="row">
 				
-			<div class="col-12 col-lg-9 col-md-8 px-0 mb-3 p-lg-0">
+			<div class="col-12 col-lg-9 col-md-8 mb-3 ">
 			<?php if (class_exists('RevSlider')): ?>
 					<?php putRevSlider("blog"); ?> 
 			<?php endif ?>
