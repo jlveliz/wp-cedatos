@@ -12,7 +12,7 @@
 			
 			<div class="row mt-3">
 
-				<div class="col-12 col-lg-9 col-md-8 px-0 mb-3"> 
+				<div class="col-12 col-lg-9 col-md-8 mb-3"> 
 						<?php if (have_posts()): ?>
 							<div class="row">
 							<?php while(have_posts()): the_post(); ?>
