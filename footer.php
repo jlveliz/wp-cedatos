@@ -21,15 +21,15 @@
 				<div class="col-md-4 col-12">
 					<ul class="d-flex justify-content-center list-unstyled list-inline" id="social-networks">
 						<?php if (get_theme_mod('facebook_link')): ?>
-							<li class="list-inline-item"><a href="<?php echo get_theme_mod( 'facebook_link' ); ?>" target="_blank"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-facebook-cedatos.png"></a></li>
+							<li class="list-inline-item"><a href="<?php echo get_theme_mod( 'facebook_link' ); ?>" target="_blank" class="social-footer" data-social="facebook"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-facebook-cedatos.png"></a></li>
 						<?php endif ?>
 
 						<?php if (get_theme_mod( 'twitter_link' )): ?>
-							<li class="list-inline-item"><a target="_blank" href="<?php echo get_theme_mod( 'twitter_link' ) ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-twitter-cedatos.png"></a> </li>
+							<li class="list-inline-item"><a href="<?php echo get_theme_mod( 'twitter_link' ) ?>"  target="_blank" class="social-footer" data-social="twitter"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-twitter-cedatos.png"></a> </li>
 						<?php endif ?>
 
 						<?php if (get_theme_mod( 'youtube_link' )): ?>
-							<li class="list-inline-item"><a target="_blank" href="<?php echo get_theme_mod( 'youtube_link' ); ?>"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-youtuve-cedatos.png"></a> </li>
+							<li class="list-inline-item"><a href="<?php echo get_theme_mod( 'youtube_link' ); ?>" target="_blank" class="social-footer" data-social="youtube"><img class="img-fluid" src="<?php echo get_template_directory_uri() ?>/assets/images/icono-youtuve-cedatos.png"></a> </li>
 						<?php endif ?>
 					</ul>
 				</div>

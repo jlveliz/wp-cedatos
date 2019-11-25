@@ -195,7 +195,7 @@ p {
 }
 
 .title-page {
-    font-size: 1.0rem;
+    font-size: 1.2rem;
 }
 
 .auth-section a {
@@ -213,8 +213,12 @@ p {
     border-bottom: 1px solid #7b1256;
 }
 
-.auth-section>li:first-child {
+.auth-section>li {
     border-right: 1px solid #000000;
+}
+
+.auth-section>li:last-child {
+    border-right: 0px!important
 }
 
 .auth-section a:hover {
@@ -227,6 +231,17 @@ p {
     color: #7b1256;
     font-size: 30px;
     margin-right: 10px
+}
+
+/* HEADER */
+.site-title {
+    border: none;
+    font-size: 2em!important;
+}
+
+.custom-logo-link img {
+    width: 25%;
+    height: 20%;
 }
 
 /* NAV */
@@ -439,6 +454,8 @@ nav.pagination .nav-links .prev {
     padding-top: 20px;
     /* height: 100px; */
     color: #ffffff;
+    position: absolute;
+    bottom: 0%;
 }
 
 #container-footer {
@@ -456,7 +473,7 @@ nav.pagination .nav-links .prev {
 }
 
 #social-networks li img {
-    width: 70%;
+    width: 50%;
 }
 
 .wpb_heading,

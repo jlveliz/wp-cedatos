@@ -4,7 +4,7 @@
 		<div class="row">
 				
 			<div class="col-12 col-lg-9 col-md-8 mb-3 ">
-			<?php if (class_exists('RevSlider')): ?>
+			<?php if (class_exists('RevSlider') && checkRevSliderExists("blog")): ?>
 					<?php putRevSlider("blog"); ?> 
 			<?php endif ?>
 			<?php if (have_posts()): ?>
