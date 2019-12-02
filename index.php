@@ -1,5 +1,4 @@
-<?php get_header(); ?> 
-			
+<?php get_header(); ?> 		
 	<main class="container my-0  px-0">
 		<div class="row">
 				
@@ -47,4 +46,5 @@
 		<?php endif; ?>
 		</div>
 	
+
 <?php get_footer(); ?>

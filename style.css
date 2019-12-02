@@ -454,7 +454,7 @@ nav.pagination .nav-links .prev {
     padding-top: 20px;
     /* height: 100px; */
     color: #ffffff;
-    position: absolute;
+    position: relative;
     bottom: 0%;
 }
 

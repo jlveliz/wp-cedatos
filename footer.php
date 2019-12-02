@@ -1,17 +1,18 @@
-<!-- WIDGETS PREFOOTER -->
-<?php if (is_active_sidebar( 'widgets_prefooter_1' )): ?>
-	<!-- <div class="row justify-content-center mt-4"> -->
-		<?php dynamic_sidebar( 'widgets_prefooter_1' );  ?>
-	<!-- </div> -->
-<?php endif ?>
+	<!-- WIDGETS PREFOOTER -->
+	<?php if (is_active_sidebar( 'widgets_prefooter_1' )): ?>
+		<!-- <div class="row justify-content-center mt-4"> -->
+			<?php dynamic_sidebar( 'widgets_prefooter_1' );  ?>
+		<!-- </div> -->
+	<?php endif ?>
 
-<?php if (is_active_sidebar( 'widgets_prefooter_2' )): ?>
-	<div class="row justify-content-center mt-2">
-		<?php dynamic_sidebar( 'widgets_prefooter_2' );  ?>
-	</div>
-<?php endif ?>
-<!-- cierra main container -->
-</main>
+	<?php if (is_active_sidebar( 'widgets_prefooter_2' )): ?>
+		<div class="row justify-content-center mt-2">
+			<?php dynamic_sidebar( 'widgets_prefooter_2' );  ?>
+		</div>
+	<?php endif ?>
+	<!-- cierra main container -->
+	</main>
+</div>
 <footer id="footer" class="container-fluid">
 		<div class="container  pt-2" id="container-footer">
 			<div class="row">
