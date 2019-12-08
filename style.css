@@ -24,10 +24,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
     6.- WIDGETS
     7.- PLUGINS
     8.- MODAL
+    9.- SHORTCODES
 
 */
 
+
 /* FONTS */
+
 @font-face {
     font-family: 'Lato';
     src: url(assets/fonts/Lato-Regular.ttf);
@@ -91,9 +94,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-style: italic;
 }
 
+
 /* FONTS */
 
+
 /* BODY */
+
 body {
     background: #ffffff;
     color: #000000;
@@ -155,8 +161,6 @@ p {
     padding-left: 0px;
     /*margin-left: 1.6rem;*/
 }
-
-
 
 .hidden {
     visibility: hidden;
@@ -233,18 +237,35 @@ p {
     margin-right: 10px
 }
 
+
 /* HEADER */
+
 .site-title {
     border: none;
     font-size: 2em!important;
 }
 
 .custom-logo-link img {
-    width: 25%;
+    width: 38%;
     height: 20%;
 }
 
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 220px to 479px
+*/
+
+@media (min-width: 220px) and (max-width: 480px) {
+    .custom-logo-link img {
+        width: 50%;
+        height: 30%;
+    }
+}
+
+
 /* NAV */
+
 #main-nav {
     background-color: #231f1f;
     padding: 0px;
@@ -268,14 +289,14 @@ p {
     font-style: normal;
 }
 
-#main-nav a:hover,  #main-nav li.active{
+#main-nav a:hover,
+#main-nav li.active {
     background-color: #7b1256
 }
 
 .dropdown:hover>.dropdown-menu {
     display: block
 }
-
 
 .dropdown-menu {
     background: #231F1F;
@@ -292,8 +313,6 @@ p {
     background: #fff;
     border-bottom: 30px solid #424242
 }
-
-
 
 #menu-secondary {
     /*font-family: 'Lato-Light';*/
@@ -323,8 +342,6 @@ p {
 
 
 /* LIST POSTS */
-
-
 
 .container-post {
     margin-bottom: 5%;
@@ -368,13 +385,13 @@ p {
     font-family: 'Lato';
 }
 
+
 /*posts noticias*/
 
 .the-post a {
     color: #ffffff;
     text-decoration: none;
 }
-
 
 .post-header {
     background-position: 50% 50% !important;
@@ -398,7 +415,9 @@ p {
     font-size: .7rem
 }
 
+
 /*paginacion*/
+
 nav.pagination h2 {
     display: none;
 }
@@ -448,7 +467,9 @@ nav.pagination .nav-links .prev {
     color: #000000 !important;
 }
 
+
 /* FOOTER */
+
 #footer {
     background-color: #000000;
     padding-top: 20px;
@@ -464,6 +485,7 @@ nav.pagination .nav-links .prev {
 
 
 /* WIDGETS */
+
 #social-networks {
     height: 100%;
 }
@@ -485,7 +507,6 @@ nav.pagination .nav-links .prev {
     text-transform: uppercase;
 }
 
-
 .widgettitle {
     font-weight: normal;
     font-size: 1.2rem;
@@ -496,7 +517,6 @@ nav.pagination .nav-links .prev {
     color: #ffffff;
     font-size: 14px
 }
-
 
 .widget-title-post {
     color: #000;
@@ -514,7 +534,6 @@ nav.pagination .nav-links .prev {
     font-size: 1.5rem;
     font-size: 1.5rem;
     font-size: 1.5vw;
-
     border: none !important;
 }
 
@@ -528,7 +547,7 @@ nav.pagination .nav-links .prev {
     background: -o-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
     background: -ms-linear-gradient(top, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
     background: linear-gradient(to bottom, rgb(153, 153, 153) 0%, rgb(225, 225, 225) 100%);
-    filter: progid:dximagetransform.microsoft.gradient(startcolorstr="rgb(153, 153, 153)", endcolorstr="rgb(225, 225, 225)", gradienttype=0);
+    filter: progid: dximagetransform.microsoft.gradient(startcolorstr="rgb(153, 153, 153)", endcolorstr="rgb(225, 225, 225)", gradienttype=0);
     border: 3px solid rgb(229, 229, 229);
     border-radius: 50%;
     cursor: pointer;
@@ -565,7 +584,6 @@ nav.pagination .nav-links .prev {
     margin: 0 !important;
     /*border-left: 17px solid #7B1256 !important;*/
     /*padding-left: 16px;*/
-
 }
 
 .tnp-widget-minimal input.tnp-submit {
@@ -581,11 +599,11 @@ nav.pagination .nav-links .prev {
 }
 
 
-
-
 /*7 - PLUGINS*/
 
+
 /*wp-forms*/
+
 .wpcf7-text {
     border: 0px !important;
     border-bottom: 1px solid #000 !important;
@@ -617,7 +635,9 @@ div.wpcf7-acceptance-missing {
     border: 2px solid #000 !important;
 }
 
+
 /*ADWS Team*/
+
 .awsm-grid.list-style>.awsm-grid-card {
     width: 80%;
     margin: 0 auto;
@@ -632,40 +652,60 @@ figure>figcaption {
     width: 200px
 }
 
+
 /**compose*/
+
+
 /*.vc_column_container>.vc_column-inner {
     padding-left: 0px!important;
 }*/
 
+
 /* ultimate members */
 
+
 /* 8 MODALS*/
-.iframe-content{
+
+.iframe-content {
     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .modal-content-popup {
     position: relative;
-     width: 80%;
-     height: 0;
-     padding-bottom: 56.25%;
- }
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
 
- .embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video{
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
     height: 90%!important;
- }
+}
+
 
 /*news title marquee*/
-.ptms_marquee a{
+
+.ptms_marquee a {
     color: #000!important;
 }
+
 .marquee-title {
     color: #000;
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Lato'!important;
+}
+
+
+/* 9.- SHORTCODES*/
+
+.jl-latest-post-container {
+    height: 350px;
 }

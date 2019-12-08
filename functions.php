@@ -9,6 +9,9 @@ require_once 'lib/jl_widgets.php';
 //required plugins
 include_once 'lib/jl_require_plugins.php';
 
+//Add Shortcodes
+include_once 'lib/jl_shortcodes.php';
+
 /*  LOAD SCRIPTS */
 if(!function_exists('jlcdatos_load_scripts')) {
     function jlcdatos_load_scripts() {
