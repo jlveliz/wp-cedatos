@@ -60,16 +60,6 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
 			),
 			array(
-				'name' => 'Custom Twitter Feeds',
-				'slug' => 'custom-twitter-feeds',
-				'required' => true,
-				'force_activation' => true,
-			),array(
-				'name' => 'Custom Facebook Feed',
-				'slug' => 'custom-facebook-feed',
-				'required' => true,
-				'force_activation' => true,
-			),array(
 				'name' => 'Visual Portfolio',
 				'slug' => 'visual-portfolio',
 				'required' => true,

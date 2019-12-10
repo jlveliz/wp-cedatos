@@ -708,4 +708,24 @@ figure>figcaption {
 
 .jl-latest-post-container {
     height: 350px;
+    background-size: cover;
+    width: 95%;
+}
+
+.jl-latest-post-container a.read-more {
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    bottom: 23%;
+    right: 3%
+}
+
+.jl-latest-post-title-container {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background-color: #231f1f;
+    color: #ffffff;
+    width: 100%;
+    left: 0;
 }
