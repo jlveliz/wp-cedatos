@@ -23,7 +23,7 @@ if(!function_exists('jl_generate_latest_post')) {
             <?php while ($query->have_posts()) { 
                 $query->the_post(); ?>
                 
-                <div class="col-lg-5 col-md-5 col-sm-6 col-12 jl-latest-post-container mb-4 mr-md-4 mr-0" style="background-image:url('<?php echo get_the_post_thumbnail_url('','full'); ?>')">
+                <div class="col-lg-5 col-md-5 col-sm-6 col-12 jl-latest-post-container mb-4 mr-md-5 mr-0" style="background-image:url('<?php echo get_the_post_thumbnail_url('','full'); ?>')">
                     <a href="<?php echo the_permalink() ?>" class="read-more"> Ver Más</a>    
                 <div class="jl-latest-post-title-container">
                         <h3 class="border-0"><a class="text-white" href="<?php echo the_permalink() ?>"><?php  the_title(); ?></a></h3>
@@ -31,6 +31,9 @@ if(!function_exists('jl_generate_latest_post')) {
                 </div>
                 
             <?php } ?>
+                <div class="col-lg-11 col-md-11 col-sm-11 col-11 pl-lg-0">
+                    <a href="<?php echo esc_url(get_permalink( get_option( 'page_for_posts' ) )) ?>" class="btn btn-default rounded-0 btn-block btn-lg bg-dark text-center pt-3 pb-3 text-white"> Ver Más</a>
+                </div>
             </div> 
         <?php } else {
 

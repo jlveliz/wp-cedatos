@@ -314,7 +314,8 @@ p {
     border-bottom: 30px solid #424242
 }
 
-#menu-secondary {
+#menu-secondary,
+#menu-sidebar {
     /*font-family: 'Lato-Light';*/
     text-transform: uppercase;
     list-style: none;
@@ -322,13 +323,16 @@ p {
     font-size: 1.0rem
 }
 
-#menu-secondary a {
+#menu-secondary a,
+#menu-sidebar a {
     color: #000000;
     border-left: 10px solid #7b1256;
     padding-left: 15px;
 }
 
 #menu-secondary li a:hover,
+#menu-secondary li.active,
+#menu-sidebar li a:hover,
 #menu-secondary li.active {
     text-decoration: none;
     color: #71104c;
@@ -336,7 +340,8 @@ p {
     font-family: 'Lato-Bold';
 }
 
-#menu-secondary li.active a {
+#menu-secondary li.active a,
+#menu-sidebar li.active a {
     color: #71104c !important;
 }
 
@@ -707,9 +712,9 @@ figure>figcaption {
 /* 9.- SHORTCODES*/
 
 .jl-latest-post-container {
-    height: 350px;
+    height: 280px;
     background-size: cover;
-    width: 95%;
+    width: 99%!important;
 }
 
 .jl-latest-post-container a.read-more {

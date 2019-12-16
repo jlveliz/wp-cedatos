@@ -9,6 +9,10 @@
 </head>
 
 <body>
+	<!-- Analytics -->
+	<?php if (get_theme_mod('analytics_setting')): ?>
+	<?php echo get_theme_mod('analytics_setting') ?>
+	<?php endif ?>
 	<!-- LOGO -->
 	<header>
 		<div class="container justify-content-center">
