@@ -1,8 +1,8 @@
 	<!-- WIDGETS PREFOOTER -->
 	<?php if (is_active_sidebar( 'widgets_prefooter_1' )): ?>
-		<!-- <div class="row justify-content-center mt-4"> -->
+		<div class="row justify-content-center align-items-center mt-4 mb-2">
 			<?php dynamic_sidebar( 'widgets_prefooter_1' );  ?>
-		<!-- </div> -->
+		</div>
 	<?php endif ?>
 
 	<?php if (is_active_sidebar( 'widgets_prefooter_2' )): ?>

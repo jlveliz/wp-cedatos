@@ -9,6 +9,9 @@ require_once 'lib/jl_widgets.php';
 //required plugins
 include_once 'lib/jl_require_plugins.php';
 
+//Add Shortcodes
+include_once 'lib/jl_shortcodes.php';
+
 /*  LOAD SCRIPTS */
 if(!function_exists('jlcdatos_load_scripts')) {
     function jlcdatos_load_scripts() {
@@ -159,6 +162,31 @@ if(!function_exists('jlcdatos_customizer')) {
             'type' => 'textarea'
         ));
 
+        // HEADER PANEL
+        $wp_customize->add_panel('header',[
+            'title' => __('Header','jlcdatos'),
+            'description' => __('Header','jlcdatos'),
+            'priority' => 200
+        ]);
+
+        $wp_customize->add_section('analytics', array(
+            'title' => __('Js Analytics', 'jlcdatos'),
+            'panel' => 'header',
+            'priority' => 20
+        ));
+
+        $wp_customize->add_setting('analytics_setting', array(
+            'default' => '',
+            'transport' => 'refresh' 
+        ));
+        $wp_customize->add_control('contact_area',array(
+            'label' => __('Js Code','jlcdatos'),
+            'priority' => 1,
+            'settings' => 'analytics_setting',
+            'section' => 'analytics',
+            'type' => 'textarea'
+        ));
+
     }
 }
 add_action( 'customize_register', 'jlcdatos_customizer',1,1);
@@ -214,8 +242,8 @@ if (!function_exists('jlcdatos_widget_sidebar')) {
         register_sidebar(array( 
             'name' => 'Widget Prefooter 1',
             'id' => 'widgets_prefooter_1',
-            'before_widget' => '<div class="row justify-content-center align-items-center mt-4 mb-2"><div class="col-12 col-md-4 text-center ">',
-            'after_widget' => '</div></div>' 
+            'before_widget' => '<div class="col-12 col-md-3 text-center ">',
+            'after_widget' => '</div>' 
         ));
 
 
