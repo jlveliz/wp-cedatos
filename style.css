@@ -250,6 +250,19 @@ h2.heading {
     height: 20%;
 }
 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 220px to 479px
+*/
+
+@media (min-width: 220px) and (max-width: 480px) {
+    .custom-logo-link img {
+        width: 50%;
+        height: 30%;
+    }
+}
+
+
 
 /* NAV */
 
@@ -277,7 +290,8 @@ h2.heading {
 }
 
 #main-nav a:hover,
-#main-nav li.active {
+#main-nav li.active,
+#main-nav a:hover,  #main-nav li.active {
     background-color: #7b1256
 }
 
@@ -693,6 +707,15 @@ figure>figcaption {
     font-size: 18px;
     text-transform: uppercase;
     font-family: 'Lato'!important;
+    display: inline-flex!important;
+    font-weight: bold;
+    margin:0px 16px;
+    position: relative;
+    top: -4px;
+}
+
+.marquee-title marquee {
+    font-weight: normal!important;
 }
 
 .jl-latest-post-container {

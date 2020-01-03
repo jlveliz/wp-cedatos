@@ -56,7 +56,7 @@
 		<!-- NAV -->
 		<?php if(has_nav_menu( 'main' )) : ?>
 		<div class="container-fluid text-center" id="main-nav">
-			<div class="container px-0">
+			<div class="container">
 				<nav class="nav-bar navbar-expand-md navbar-dark justify-content-center">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -88,7 +88,7 @@
 				<?php endif ?>
 
 				<?php if (is_active_sidebar( 'precontent_right' )): ?>
-					<div class="col-12 justify-content-md-right justify-content-center mt-2 mt-md-0 text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?> pt-3 px-lg-0">
+					<div class="col-12 justify-content-md-right justify-content-center mt-2 mt-md-0 text-center text-md-right <?php if(!is_active_sidebar( 'precontent_left' )) : ?>col-md-12<?php else: ?>col-md-4<?php endif; ?> pt-3">
 						<?php dynamic_sidebar( 'precontent_right' );  ?>
 					</div>
 				<?php endif ?>

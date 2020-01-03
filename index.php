@@ -1,5 +1,5 @@
 <?php get_header(); ?> 		
-	<main class="container my-0  px-0">
+	<main class="container my-0">
 		<div class="row">
 				
 			<div class="col-12 col-lg-9 col-md-8 mb-3 ">
