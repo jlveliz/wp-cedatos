@@ -242,7 +242,7 @@ if (!function_exists('jlcdatos_widget_sidebar')) {
         register_sidebar(array( 
             'name' => 'Widget Prefooter 1',
             'id' => 'widgets_prefooter_1',
-            'before_widget' => '<div class="col-12 col-md-3 text-center ">',
+            'before_widget' => '<div class="col-12 col-md-6 text-center ">',
             'after_widget' => '</div>' 
         ));
 

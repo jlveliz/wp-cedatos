@@ -19,7 +19,7 @@ if(!function_exists('jl_generate_latest_post')) {
         $query = new WP_Query($atrs);
 
         if($query->have_posts()) { ?>
-            <div class="row mx-0">
+            <div class="row">
             <?php while ($query->have_posts()) { 
                 $query->the_post(); 
                 $title = strlen(get_the_title()) > 75 ? substr(get_the_title(),0,75)."..." : get_the_title();

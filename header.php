@@ -30,12 +30,12 @@
 			<div class="row">
 				<div class="<?php if(has_nav_menu( 'auth-area' )) : ?>col-lg-6 col-md-6 <?php else: ?> col-12 <?php endif; ?> text-md-left text-left align-middle title-page">
 					<?php 
-					the_title( )
-					/*if (is_page()) {
+					// the_title( )
+					if (is_page()) {
 						the_title();
 					} else { ?>
 						Noticias
-					<?php } */ ?>
+					<?php }  ?>
 				</div>
 				<?php if(has_nav_menu( 'auth-area' )) : ?>
 					<div class="col-lg-6 col-md-6 col-12 align-middle text-center">

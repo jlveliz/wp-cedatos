@@ -721,7 +721,9 @@ figure>figcaption {
 .jl-latest-post-container {
     height: 300px;
     background-size: cover;
-    background-position: center center
+    background-position: center center;
+    background-clip: border-box !important;
+    cursor: pointer;
 }
 
 .jl-latest-post-container a.read-more {
