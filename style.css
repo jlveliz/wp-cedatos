@@ -718,9 +718,3 @@ figure>figcaption {
     width: 100%;
     left: 0;
 }
-
-.ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}

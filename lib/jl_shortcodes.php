@@ -21,13 +21,15 @@ if(!function_exists('jl_generate_latest_post')) {
         if($query->have_posts()) { ?>
             <div class="row mx-0">
             <?php while ($query->have_posts()) { 
-                $query->the_post(); ?>
+                $query->the_post(); 
+                $title = strlen(get_the_title()) > 75 ? substr(get_the_title(),0,75)."..." : get_the_title();
+                ?>
                 
                 <div class="col-lg-6 box col-12 mb-4 p-3">
                     <div class="col-12 jl-latest-post-container" style="background-image:url('<?php echo get_the_post_thumbnail_url('','full'); ?>')">
                         <a href="<?php echo the_permalink() ?>" class="read-more"> Ver Más</a>    
                         <div class="jl-latest-post-title-container">
-                            <h3 class="border-0 ellipsis"><a class="text-white" href="<?php echo the_permalink() ?>"><?php  the_title(); ?></a></h3>
+                            <h3 class="border-0"><a class="text-white" href="<?php echo the_permalink() ?>"><?php  echo $title; ?></a></h3>
                         </div>
                     </div>
                 </div>
