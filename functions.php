@@ -106,8 +106,6 @@ if(!function_exists('jlcdatos_customizer')) {
             'panel' => 'footer',
             'priority' => 10
         ]);
-
-
         $wp_customize->add_setting('facebook_link' , array(
             'default'     => '',
             'transport'   => 'refresh'
@@ -118,7 +116,6 @@ if(!function_exists('jlcdatos_customizer')) {
             'settings' => 'facebook_link',
             'priority' => 1, // show it just below the custom-logo
         ));
-
 
         $wp_customize->add_setting('twitter_link' , array(
             'default'     => '',
@@ -141,6 +138,26 @@ if(!function_exists('jlcdatos_customizer')) {
             'settings' => 'youtube_link',
             'priority' => 3, // show it just below the custom-logo
         ));
+
+
+        $wp_customize->add_section( 'copyright', [
+            'title' => __('Copyright','jlcdatos'),
+            'panel' => 'footer',
+            'priority' => 20
+        ]);
+
+        $wp_customize->add_setting('copyright_text_setting' , array(
+            'default'     => '',
+            'transport'   => 'refresh'
+        ));
+
+        $wp_customize->add_control('copyright', array(
+            'label' => __('CopyRight','jlcdatos'),
+            'section' => 'copyright',
+            'settings' => 'copyright_text_setting',
+            'priority' => 20, 
+        ));
+
 
 
         /* CONTACT AREA */

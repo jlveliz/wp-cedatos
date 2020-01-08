@@ -588,6 +588,7 @@ nav.pagination .nav-links .prev {
     color: #fff !important;
     font-size: 1.2rem !important;
     margin: 0 !important;
+    cursor: pointer;
     /*border-left: 17px solid #7B1256 !important;*/
     /*padding-left: 16px;*/
 }
@@ -742,4 +743,24 @@ figure>figcaption {
     color: #ffffff;
     width: 100%;
     left: 0;
+}
+
+/*
+    forms
+*/
+
+input[type=submit].um-button, 
+input[type=submit].um-button:focus, a.um-button {
+    background-image: url(assets/images/boton_suscribe.png) !important;
+    background-color: none !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: left top !important;
+    /*background-image: none!important;*/
+    text-shadow: none !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    margin: 0 !important;
+    cursor: pointer;
+    border-radius: 0px!important;
 }

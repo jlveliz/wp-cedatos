@@ -41,6 +41,12 @@
 					<?php endif ?>
 				</div>
 			</div>
+			<!-- copyright -->
+			<?php if (get_theme_mod('copyright_text_setting')): ?>
+				<div class="row">
+					<p class="col-12 text-center text-white"><small><?php echo get_theme_mod( 'copyright_text_setting' ); ?></small></p>
+				</div>
+			<?php endif ?>
 		</div>
 </footer>
 <?php get_template_part( 'modal' ); ?>
