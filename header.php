@@ -79,7 +79,8 @@
 
 	<div id="main-container" class="container pb-4">
 		
-		<!-- WIDGETS PREFOOTER -->
+		<!-- WIDGETS TOP -->
+		<?php if ( is_active_sidebar( 'precontent_left' ) || is_active_sidebar( 'precontent_right' ) ): ?>
 			<div class="row">
 				<?php if (is_active_sidebar( 'precontent_left' )): ?>
 					<div class="col-12 justify-content-md-left justify-content-center text-center text-md-left <?php if(!is_active_sidebar( 'precontent_right' )) : ?>col-md-12<?php else: ?>col-md-8<?php endif; ?> pt-3 px-lg-0">
@@ -93,5 +94,6 @@
 					</div>
 				<?php endif ?>
 			</div>
+		<?php endif ?>
 
 	
