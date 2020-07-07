@@ -46,4 +46,3 @@ if(!function_exists('jl_generate_latest_post')) {
 
     add_shortcode('jl_latest_posts', 'jl_generate_latest_post');
 }
-

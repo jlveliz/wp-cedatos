@@ -272,4 +272,5 @@ if (!function_exists('jlcdatos_widget_sidebar')) {
         ));
     }
 }
+
 add_action( 'widgets_init', 'jlcdatos_widget_sidebar', 10, 1 );
