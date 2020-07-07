@@ -10,11 +10,11 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 			 array(
 			 	'name' => 'Revolution Slider WP',
 	            'slug' => 'revslider',
-	            'source' => 'http://astudio.si/preview/plugins/'.'accounting'.'/revslider.zip',
-	            'required' => false,
+	            'source' => get_template_directory().'/vendor/revslider.zip',
+	            'required' => true,
 	            'version' => '',
 	            'force_activation' => false,
-	            'force_deactivation' => false,
+	            'force_deactivation' => true,
 	            'external_url' => '',	
         	),
         	array(
@@ -32,65 +32,59 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 	            'required' => false,
 	            'version' => '',
 	            'force_activation' => false,
-	            'force_deactivation' => false,
+	            'force_deactivation' => true,
 	            'external_url' => '',
         	),
         	array(
 	            'name' => 'Visual Composer',
-	            'slug' => 'js_composer',
-	            'source' => 'http://astudio.si/preview/plugins/'.'accounting'.'/js_composer.zip',
-	            'required' => false,
+				'slug' => 'js_composer',
+				'source' => get_template_directory().'/vendor/js_composer.zip',
+	            'required' => true,
 	            'version' => '',
 	            'force_activation' => false,
 	            'force_deactivation' => false,
 	            'external_url' => '',
         	),
-        	array(
+        	/*array(
 				'name'     				=> esc_html__( 'WPRT Addons for Visual Composer', 'thejlmedia'),  // The plugin name
 				'slug'     				=> 'WPRT_VC_Addons', // The plugin slug (typically the folder name)
 				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
 				'source'             	=> esc_url('http://ninzio.com/craft/_plugins/WPRT_VC_Addons.zip'),
 				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-			),
+			),*/
 			array(
-				'name'     				=> esc_html__( 'WPRT Custom Post Type', 'thejlmedia'), // The plugin name
-				'slug'     				=> 'WPRT_Custom_Post_Type', // The plugin slug (typically the folder name)
-				'required' 				=> false, // If false, the plugin is only 'recommended' instead of required
-				'source'             	=> esc_url('http://ninzio.com/craft/_plugins/WPRT_Custom_Post_Type.zip'),
-				'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-			),
-			array(
-				'name' => 'WordPress Twitter Feeds With Shortcode',
-				'slug' => 'shortcode-twitter-feeds',
-				'required' => true,
-			),array(
-				'name' => 'Custom Facebook Feed',
-				'slug' => 'custom-facebook-feed',
-				'required' => true,
-			),array(
 				'name' => 'Visual Portfolio',
 				'slug' => 'visual-portfolio',
 				'required' => true,
+				'force_activation' => false,
 			),array(
 				'name' => 'AWSM Team',
 				'slug' => 'awsm-team',
 				'required' => true,
-			),array(
+				'force_activation' => false,
+			),
+			/*array(
 				'name' => 'Accordion',
 				'slug' => 'accordions',
 				'required' => true,
-			),array(
+				
+			),*/
+			array(
 				'name' => 'Better Categories Images',
 				'slug' => 'better-categories-images',
 				'required' => true,
+				'force_activation' => false,
+				'force_deactivation' => false,
 			),array(
 				'name' => 'Ultimate Member – User Profile & Membership Plugin',
 				'slug' => 'ultimate-member',
 				'required' => true,
+				'force_activation' => false,
 			),array(
 				'name' => 'Post title marquee scroll',
 				'slug' => 'post-title-marquee-scroll',
 				'required' => true,
+				'force_activation' => false,
 			)
 		];
 

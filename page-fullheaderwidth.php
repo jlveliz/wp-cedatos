@@ -2,7 +2,7 @@
 <?php get_header(); ?> 
 	
 			
-	<main class="container my-0 <?php if(is_front_page()) : ?> px-0 <?php endif; ?>">
+	<main class="container my-0">
 			<?php if (have_posts()): ?>
 			<?php while(have_posts()): the_post(); ?>
 			<div class="row">
@@ -11,9 +11,10 @@
 				</div>
 			</div>
 			<div class="row mt-4">
-				<div class="col-12 p-lg-0">
+				<div class="col-12 col-lg-9 col-md-8 pl-lg-0">
 					<?php the_content() ?>
 				</div>
+				<?php get_sidebar(); ?>
 			</div>
 			<?php endwhile; ?>
 		<?php else: ?>

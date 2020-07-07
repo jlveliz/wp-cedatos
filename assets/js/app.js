@@ -25,6 +25,43 @@ jQuery(document).ready(function($) {
 		self.location = $(this).attr('href');
 	})
 
+
+	function getDomain() {
+		return location.protocol + '//' + location.hostname  
+	}
+
+
+	var mouseIn = (e) =>{
+		var el = $(e.currentTarget);
+		var social = el.data('social')
+		var icon = el.children()
+		var newSource =  e.type == "mouseenter" ? "youtube" : getDomain() + '/wp-content/themes/cedatos/' ; 
+		
+		switch (social) {
+			case 'facebook':
+				newSource+="assets/images/icono-facebook-cedatos.png" 
+				break;
+			case 'twitter':
+				newSource+="assets/images/icono-twitter-cedatos.png"
+				break;
+				default:
+					break;
+		}
+		
+		icon.attr('src',newSource)
+
+	}
+	
+	var mouseOut = (e) =>{
+
+		var el = e.currenTarget;
+
+		console.log(el)
+
+	}
+
+	$(".social-footer").hover( mouseIn , mouseIn )
+
 	
 
 });
