@@ -3,9 +3,13 @@
 		<div class="row mt-2">
 				
 			<div class="col-12 col-lg-9 col-md-8 mb-3 pl-0">
-			<?php if (class_exists('RevSlider') && checkRevSliderExists("blog")): ?>
-					<?php putRevSlider("blog"); ?> 
-			<?php endif ?>
+			
+			<?php 
+				if (is_active_sidebar( 'widgets_blog' )){
+				 	dynamic_sidebar( 'widgets_blog' );  
+			 	} 
+			 ?>
+			
 			<?php if (have_posts()): ?>
 				<div class="row mt-3">
 				<?php while(have_posts()): the_post();   
