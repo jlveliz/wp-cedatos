@@ -1,5 +1,4 @@
 <div class="col-12 col-lg-3 col-md-4 pl-lg-0">
-	<?php if (class_exists('RevSlider') && checkRevSliderExists("sidebar")):  putRevSlider("sidebar"); endif ?> 
 	<?php if(has_nav_menu( 'secundary' )) : ?>
 		<nav class="nav-bar mb-2 mt-2">
 			<?php 
