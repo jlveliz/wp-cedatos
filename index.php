@@ -48,7 +48,7 @@
 			<?php get_sidebar(); ?>
 			
 		<?php else: ?>
-			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			<p><?php esc_html_e( 'Lo sentimos, no se encuentra datos relacionados a la busqueda.' ); ?></p>
 		<?php endif; ?>
 		</div>
 <?php get_footer(); ?>

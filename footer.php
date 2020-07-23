@@ -7,6 +7,7 @@
 
 	<?php if (is_active_sidebar( 'widgets_prefooter_2' )): ?>
 		<div class="row justify-content-center mt-2">
+			<h2>Asociados con </h2>
 			<?php dynamic_sidebar( 'widgets_prefooter_2' );  ?>
 		</div>
 	<?php endif ?>
