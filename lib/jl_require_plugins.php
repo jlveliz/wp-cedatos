@@ -57,12 +57,13 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'slug' => 'visual-portfolio',
 				'required' => true,
 				'force_activation' => false,
-			),array(
-				'name' => 'AWSM Team',
-				'slug' => 'awsm-team',
-				'required' => true,
-				'force_activation' => false,
-			),
+			)
+			// ,array(
+			// 	'name' => 'AWSM Team',
+			// 	'slug' => 'awsm-team',
+			// 	'required' => true,
+			// 	'force_activation' => false,
+			// ),
 			/*array(
 				'name' => 'Accordion',
 				'slug' => 'accordions',
@@ -75,12 +76,14 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'required' => true,
 				'force_activation' => false,
 				'force_deactivation' => false,
-			),array(
-				'name' => 'Ultimate Member – User Profile & Membership Plugin',
-				'slug' => 'ultimate-member',
-				'required' => true,
-				'force_activation' => false,
-			),array(
+			)
+			// ,array(
+			// 	'name' => 'Ultimate Member – User Profile & Membership Plugin',
+			// 	'slug' => 'ultimate-member',
+			// 	'required' => true,
+			// 	'force_activation' => false,
+			// )
+			,array(
 				'name' => 'Post title marquee scroll',
 				'slug' => 'post-title-marquee-scroll',
 				'required' => true,

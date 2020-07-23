@@ -28,7 +28,7 @@
 		<!-- PREHEADER -->
 		<div class="container">
 			<div class="row">
-				<div class="<?php if(has_nav_menu( 'auth-area' )) : ?>col-lg-6 col-md-6 <?php else: ?> col-12 <?php endif; ?> text-md-left text-left align-middle title-page">
+				<div class="col-6 text-md-left text-left align-middle title-page">
 					<?php 
 					// the_title( )
 					if (is_page()) {
@@ -37,8 +37,8 @@
 						Noticias
 					<?php }  ?>
 				</div>
-				<?php if(has_nav_menu( 'auth-area' )) : ?>
-					<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
+				<div class="col-lg-6 col-md-6 col-12 align-middle text-center">
+					<?php if(has_nav_menu( 'auth-area' )) : ?>
 						<?php 
 								$args = [
 									'theme_location' => 'auth-area',
@@ -47,8 +47,16 @@
 								];
 								wp_nav_menu($args); 
 						?>
-					</div>
-				<?php endif; ?>
+					<?php endif; ?>
+					
+					<form action="">
+						<div class="control-group">
+							<input type="text" class="form-control">
+							<button class="btn btn-link" type="button"> <i class="fas fa-search"></i> </button>
+						</div>
+					</form>
+
+				</div>
 
 			</div>
 		</div>
