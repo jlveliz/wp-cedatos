@@ -749,6 +749,10 @@ figure>figcaption {
     forms
 */
 
+.tnp-field-email label {
+    display: none;
+}
+
 input[type=submit].um-button, 
 input[type=submit].um-button:focus, a.um-button {
     background-image: url(assets/images/boton_suscribe.png) !important;
