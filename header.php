@@ -48,14 +48,14 @@
 								wp_nav_menu($args); 
 						?>
 					<?php endif; ?>
-					
-					<form action="">
-						<div class="control-group">
-							<input type="text" class="form-control">
-							<button class="btn btn-link" type="button"> <i class="fas fa-search"></i> </button>
+
+					<!--<form action="form-inline">
+						<div class="control-group mx-sm-3 mb-1">
+							<input type="text" class="form-control" placeholder="Buscar" >
+							<button class="btn btn-link" type="button"> Buscar</button>
 						</div>
 					</form>
-
+							-->
 				</div>
 
 			</div>
