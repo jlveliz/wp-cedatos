@@ -69,8 +69,8 @@ if (!function_exists('register_jl_cdatos_plugins')) {
 				'slug' => 'accordions',
 				'required' => true,
 				
-			),*/
-			array(
+			)*/
+			,array(
 				'name' => 'Better Categories Images',
 				'slug' => 'better-categories-images',
 				'required' => true,
