@@ -49,7 +49,6 @@
 			<?php endif ?>
 		</div>
 </footer>
-<?php get_template_part( 'modal' ); ?>
 	<?php wp_footer(); ?>
 </body>
 </html>
