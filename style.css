@@ -153,6 +153,11 @@ h2.heading {
     margin-bottom: 8px !important
 }
 
+ul li a {
+    color: #000000;
+}
+
+
 
 /* p {
     font-family: 'Lato-LightItalic';
@@ -514,7 +519,8 @@ nav.pagination .nav-links .prev {
 }
 
 .widgettitle {
-    font-weight: normal;
+    margin-top: 10px;
+    font-weight: bold;
     font-size: 1.2rem;
     /*font-family: 'Lato-Light'*/
 }
