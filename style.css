@@ -292,6 +292,10 @@ ul li a:hover {
     padding: 0px;
 }
 
+#main-nav ul {
+    padding: 0px;
+}
+
 #main-nav ul li::before{
     content: '';
     margin: 0px;
