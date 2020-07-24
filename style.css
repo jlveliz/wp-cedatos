@@ -153,9 +153,13 @@ h2.heading {
     margin-bottom: 8px !important
 }
 
+ul li {
+    list-style-type: none;
+}
 ul li::before {
     color: #660e44;
     content: '■';
+    margin-right: 10px;
 }
 ul li a {
     color: #000000;
