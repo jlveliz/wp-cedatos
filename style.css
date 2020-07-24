@@ -153,6 +153,10 @@ h2.heading {
     margin-bottom: 8px !important
 }
 
+ul li::before {
+    color: #660e44;
+    content: '■';
+}
 ul li a {
     color: #000000;
 }
