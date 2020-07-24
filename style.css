@@ -292,6 +292,11 @@ ul li a:hover {
     padding: 0px;
 }
 
+#main-nav ul li::before{
+    content: '';
+    margin: 0px;
+}
+
 #main-nav .container {
     background-color: #231f1f;
 }
