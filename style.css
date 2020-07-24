@@ -153,6 +153,10 @@ h2.heading {
     margin-bottom: 8px !important
 }
 
+ul {
+    padding: 5px;
+}
+
 ul li {
     list-style-type: none;
 }
@@ -163,6 +167,10 @@ ul li::before {
 }
 ul li a {
     color: #000000;
+}
+
+ul li a:hover {
+    color: #660e44;
 }
 
 
