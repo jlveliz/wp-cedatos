@@ -153,6 +153,27 @@ h2.heading {
     margin-bottom: 8px !important
 }
 
+ul {
+    padding: 5px;
+}
+
+ul li {
+    list-style-type: none;
+}
+ul li::before {
+    color: #660e44;
+    content: '■';
+    margin-right: 10px;
+}
+ul li a {
+    color: #000000;
+}
+
+ul li a:hover {
+    color: #660e44;
+}
+
+
 
 /* p {
     font-family: 'Lato-LightItalic';
@@ -269,6 +290,15 @@ h2.heading {
 #main-nav {
     background-color: #231f1f;
     padding: 0px;
+}
+
+#main-nav ul {
+    padding: 0px;
+}
+
+#main-nav ul li::before{
+    content: '';
+    margin: 0px;
 }
 
 #main-nav .container {
@@ -514,7 +544,8 @@ nav.pagination .nav-links .prev {
 }
 
 .widgettitle {
-    font-weight: normal;
+    margin-top: 10px;
+    font-weight: bold;
     font-size: 1.2rem;
     /*font-family: 'Lato-Light'*/
 }
@@ -748,6 +779,10 @@ figure>figcaption {
 /*
     forms
 */
+
+.tnp-field-email label {
+    display: none;
+}
 
 input[type=submit].um-button, 
 input[type=submit].um-button:focus, a.um-button {
