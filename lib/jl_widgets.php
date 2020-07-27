@@ -109,11 +109,27 @@ class TitlePost extends WP_Widget
 
 		if ($posts->have_posts()) { ?>
 			<!--<div class="row">-->
+			<style>
+				.marquee-title span {
+					cursor: pointer;
+				}
+			</style>
 			<script type="text/javascript">
+				let playMarquee = e => {
+					console.log(e);
+				}
+
 				document.onreadystatechange = () => {
 					if (document.readyState == "complete") {
 						const marquee = document.getElementById('marquee');
-						marquee.stop()
+						marquee.stop();
+
+						const spansMarquee = document.querySelectorAll('#marque span')
+
+						for (let index = 0; index < spansMarquee.length; index++) {
+							const element = spansMarquee[index];
+							element.addEventListener('click', playMarquee)
+						}
 					}
 				}
 			</script>
@@ -121,8 +137,9 @@ class TitlePost extends WP_Widget
 				<marquee class="ptms_marquee" id="marquee" style="color:#000" scrollamount="5" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
 					<?php while ($posts->have_posts()) {
 						$posts->the_post(); ?>
-						<< <a class="" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>"> <?php ucfirst(the_title())  ?> </a> -
-						<?php } ?>
+						<span>
+							<< </span> <a class="" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>"> <?php ucfirst(the_title())  ?> </a> -
+							<?php } ?>
 				</marquee>
 			</span>
 			<!--</div>-->
