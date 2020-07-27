@@ -121,26 +121,26 @@ class TitlePost extends WP_Widget
 
 				document.onreadystatechange = () => {
 					//if (document.readyState == "complete") {
-						const marquee = document.getElementById('marquee');
-						marquee.stop();
+					const marquee = document.getElementById('marquee');
+					marquee.stop();
 
-						const spansMarquee = document.querySelectorAll('#marque span')
+					const spansMarquee = document.querySelectorAll('#marque span')
 
-						for (let index = 0; index < spansMarquee.length; index++) {
-							const element = spansMarquee[index];
-							element.addEventListener('click', playMarquee)
-						}
+					for (let index = 0; index < spansMarquee.length; index++) {
+						const element = spansMarquee[index];
+						element.addEventListener('click', playMarquee)
+					}
 					//}
 				}
 			</script>
 			<span class="marquee-title d-sm-block">Noticias:
-				<marquee class="ptms_marquee" id="marquee" style="color:#000" scrollamount="5" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
+				<div class="ptms_marquee" id="marquee" style="color:#000" scrollamount="5" scrolldelay="5" direction="left">
 					<?php while ($posts->have_posts()) {
 						$posts->the_post(); ?>
 						<span>
 							<< </span> <a class="" href="<?php the_permalink() ?> " title="<?php the_title(); ?>" alt="<?php the_title(); ?>"> <?php ucfirst(the_title())  ?> </a> -
 							<?php } ?>
-				</marquee>
+				</div>
 			</span>
 			<!--</div>-->
 		<?php } else {
