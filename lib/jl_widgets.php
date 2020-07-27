@@ -119,8 +119,8 @@ class TitlePost extends WP_Widget
 					console.log(e);
 				}
 
-				//document.onreadystatechange = () => {
-					if (document.readyState == "complete") {
+				document.onreadystatechange = () => {
+					//if (document.readyState == "complete") {
 						const marquee = document.getElementById('marquee');
 						marquee.stop();
 
@@ -130,8 +130,8 @@ class TitlePost extends WP_Widget
 							const element = spansMarquee[index];
 							element.addEventListener('click', playMarquee)
 						}
-					}
-				//}
+					//}
+				}
 			</script>
 			<span class="marquee-title d-sm-block">Noticias:
 				<marquee class="ptms_marquee" id="marquee" style="color:#000" scrollamount="5" scrolldelay="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()">
