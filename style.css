@@ -251,12 +251,11 @@ ul li a:hover {
     /*border-bottom: 1px solid  #7b1256;*/
 }
 
-.list-unstyled li:before {
-    /* content: "•"; */
+/* .list-unstyled li:before {
     color: #7b1256;
     font-size: 30px;
     margin-right: 10px
-}
+} */
 
 
 /* HEADER */
