@@ -526,6 +526,10 @@ nav.pagination .nav-links .prev {
     height: 100%;
 }
 
+#social-networks li::before{
+    content: none;
+}
+
 #social-networks li {
     display: inline;
 }
