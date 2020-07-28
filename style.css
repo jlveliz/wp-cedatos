@@ -527,8 +527,8 @@ nav.pagination .nav-links .prev {
 }
 
 #social-networks li:before{
-    content: none;
-    margin: 0px;
+    content: none!important;
+    margin: 0px!important;
 }
 
 #social-networks li {
