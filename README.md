@@ -6,3 +6,8 @@ Theme de wordpress creado a la medida para [cedatos](https://cedatos.com.ec)
 * Bootstrap 4
 * Jquery
 * PHP 
+
+## Contact
+Email: info@thejlmedia.com
+
+Website: https://thejlmedia.com
